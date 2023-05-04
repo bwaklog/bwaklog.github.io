@@ -32,12 +32,13 @@ html, body {
 }
 
 .links {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
-.rps-button {
+.button {
+    margin-bottom: 15px;
     border: solid;
     border-color: #2c2a2e;
     padding: 12px;
@@ -53,7 +54,7 @@ html, body {
     box-shadow 300ms ease-in-out, 
     border-radius 800ms ease-in-out;
 }
-.rps-button:hover {
+.button:hover {
     border: solid;
     border-color:#f9d97886;
     box-shadow: 0px 0px 16px #0e0e0e;
@@ -61,7 +62,7 @@ html, body {
     /* color: #2c2a2e; */
 }
 
-.rps-button:active {
+.button:active {
     background-color: #f9d97886;
     color: #232124;
 }
