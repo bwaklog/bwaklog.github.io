@@ -62,8 +62,15 @@ html, body {
     transform: translate(135px, -40px);
     opacity: 0;
 
-    transition: transform 300ms, opacity 300ms;
+    transition: transform 300ms, opacity 300ms, box-shadow 100ms;
 }
+
+.play-btn:hover {
+    box-shadow: 0px 0px 10px #5bc264;
+    /* background: radial-gradient(circle, rgba(105,220,114,1) 69%, rgba(105,220,114,0.8395348837209302) 100%);; */
+    background: radial-gradient(circle, #69dc72, 80%, #69dc73d8 100%);
+}
+
 
 .child:hover > .play-btn {
     transform: translate(135px, -45px);
