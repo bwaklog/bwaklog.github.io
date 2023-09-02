@@ -1,8 +1,9 @@
 html, body {
     font-family: 'Roboto Mono';
+    /* font-family: 'Helvetica', monospace; */
     margin: 0;
     background-color: black;
-    color: white;
+    color: #cad1df;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 .page-navbar {
-    background-color: lightcoral;
+    background-color: #3f0e1a;
     position: fixed;
     height: 70px;
     font-size: 30px;
@@ -26,7 +27,9 @@ html {
     padding-left: 6px;
 }
 .page-title {
-    font-size: 35px;
+    /* transform: translate(0, 8%); */
+    font-size: 60px;
+    font-weight: 900;
 }
 .page-subtitle {
     font-size: 15px;
@@ -37,8 +40,42 @@ section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     padding-top: 65px;
+    display: grid;
+    justify-content: center;
 }
 
 nav {
     height: 30px;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    /* background-color: lightcoral; */
+}
+.profile-image > img {
+    width: inherit;
+    height: inherit;
+    border-radius: 4px;
+
+}
+
+.profile-info {
+    margin-top: 6px;
+    width: 250px;
+    /* background-color: lightseagreen; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.profile-info>p {
+    margin: 0;
+    font-size: 12px;
+    justify-self: center;
 }
