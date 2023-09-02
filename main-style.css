@@ -1,0 +1,44 @@
+html, body {
+    font-family: 'Roboto Mono';
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.page-navbar {
+    background-color: lightcoral;
+    position: fixed;
+    height: 70px;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-navbar-titles>p {
+    display: block;
+    margin: 0px;
+    padding-left: 6px;
+}
+.page-title {
+    font-size: 35px;
+}
+.page-subtitle {
+    font-size: 15px;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-top: 65px;
+}
+
+nav {
+    height: 30px;
+}

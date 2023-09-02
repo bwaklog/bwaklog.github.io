@@ -5,7 +5,7 @@ html, body {
 }
 
 .parent {
-    display: flex;
+    display: grid;
     min-height: 100vh;
 }
 
@@ -102,4 +102,60 @@ html, body {
     transform: translate(0, -25px);
     opacity: 0.65;
     overflow:scroll;
+}
+/* ------------------------------------ */
+/* --------------REDESIGN-------------- */
+
+.redesign-1 {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    background-color: #282828;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms, padding-right 300ms cubic-bezier(.44,.07,.56,.68);
+}
+.redesign-1:hover {
+    background-color: #424242;
+    /* padding-right: 250px */
+}
+
+.image-container {
+    width: 168px;
+    height: 168px;
+    background-color: lightcoral;
+    margin: auto;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.image-container > img {
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    transition: scale 300ms;
+    border-radius: inherit;
+}
+.image-container:hover > img {
+    scale: 1.03;
+}
+.image-container:active > img {
+    scale: 1;
+}
+
+
+.redesign-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(125px, -45px);
+    border: none;
+    margin: 0px;
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #65d46e;
 }
