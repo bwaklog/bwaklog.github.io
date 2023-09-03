@@ -6,6 +6,7 @@ html, body {
     color: #cad1df;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 html {
@@ -45,7 +46,7 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    /* padding-top: 65px; */
+    padding-top: 30px;
     display: grid;
     scrollbar-width: none;
     /* justify-content: center; */
