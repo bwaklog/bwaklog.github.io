@@ -123,8 +123,7 @@ nav {
     border: 2px solid #cad1df;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
         background-color: #b96259;
         color: #1c1411;
 
