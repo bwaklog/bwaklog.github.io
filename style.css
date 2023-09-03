@@ -100,7 +100,7 @@ nav {
     flex-direction: column;
 }
 .profile-links .item {
-    width: 400px;
+    width: 40vh;
     font-size: 20px;
     font-family: inherit;
     font-weight: 400;
