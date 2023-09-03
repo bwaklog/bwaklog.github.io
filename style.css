@@ -5,6 +5,7 @@ html, body {
     background-color: #1c1411;
     color: #cad1df;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -22,6 +23,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 .page-navbar-titles>p {
