@@ -4,6 +4,8 @@ html, body {
     margin: 0;
     background-color: #1c1411;
     color: #cad1df;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 html {
@@ -100,7 +102,7 @@ nav {
     flex-direction: column;
 }
 .profile-links .item {
-    width: 400px;
+    width: 40vh;
     font-size: 20px;
     font-family: inherit;
     font-weight: 400;
