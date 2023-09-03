@@ -90,8 +90,8 @@ nav {
 }
 
 .carousel-wrapper {
-    max-height: 75vh;
-    width: 95vh;
+    max-height: 80vh;
+    width: 50vh;
     /* border: 1px solid #ddd; */
     border-radius: 25px;
     display: flex;
@@ -105,7 +105,7 @@ nav {
 }
 
 .carousel-wrapper .item {
-    min-width: 95vh;
+    min-width: 50vh;
     height: 80vh;
     background-color: black;
     scroll-snap-align: start;
