@@ -39,7 +39,7 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    padding-top: 65px;
+    /* padding-top: 65px; */
     display: grid;
     /* justify-content: center; */
 }
@@ -90,10 +90,10 @@ nav {
 }
 
 .carousel-wrapper {
-    max-height: 80vh;
-    width: 50vh;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    max-height: 75vh;
+    width: 95vh;
+    /* border: 1px solid #ddd; */
+    border-radius: 25px;
     display: flex;
     overflow-x: auto;
     scrollbar-color: none;
@@ -105,10 +105,15 @@ nav {
 }
 
 .carousel-wrapper .item {
-    min-width: 50vh;
+    min-width: 95vh;
     height: 80vh;
+    background-color: black;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xxx-large;
 }
 
 
