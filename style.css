@@ -5,8 +5,8 @@ html, body {
     background-color: #1c1411;
     color: #cad1df;
     max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 html {
