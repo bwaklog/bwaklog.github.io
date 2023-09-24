@@ -27,6 +27,7 @@ header {
 
 .background,
 .foreground {
+    user-select: none;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -35,13 +36,40 @@ header {
 }
 
 .background {
+    /* pointer-events: none; */
+    height: 100%;
+    width: 100%;
     transform: translateZ(-10px) scale(2);
+    
+    transition: width 300ms cubic-bezier(.89,.03,.26,.99),
+                height 300ms cubic-bezier(.89,.03,.26,.99);
+
+    &:hover {
+        height: 150%;
+        width: 150%;
+    }
 }
 .foreground {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 55%;
     object-fit: contain;
     transform: translateZ(-5px) scale(1.2);
+
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+
+    transition: width 300ms cubic-bezier(.89,.03,.26,.99),
+                height 300ms cubic-bezier(.89,.03,.26,.99);
+    
+    &:hover {
+        width: 65%;
+        height: 65%;
+    }
+    &:active {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 .title {
@@ -91,6 +119,7 @@ section {
 }
 
 .aboutme > p {
+    user-select: none;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     margin: 0;
@@ -105,6 +134,7 @@ section {
 }
 
 .link-buttons {
+    user-select: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -143,6 +173,11 @@ section {
         background-color: #53626e;
         border-radius: 12px;
     }
+}
+
+.pfp {
+    pointer-events: none;
+    user-select: none;
 }
 
 footer {
