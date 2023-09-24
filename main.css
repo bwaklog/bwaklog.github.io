@@ -33,6 +33,10 @@ header {
     width: 100%;
     object-fit:cover;
 
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+
 }
 
 .background {
@@ -48,16 +52,18 @@ header {
         height: 150%;
         width: 150%;
     }
+
+    &:active {
+        height: 120%;
+        width: 120%;
+    }
 }
 .foreground {
     width: 55%;
     height: 55%;
     object-fit: contain;
-    transform: translateZ(-5px) scale(1.2);
-
-    -webkit-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
+    transform:  translateZ(-5px) scale(1.2),
+                translateY(-50px);
 
     transition: width 300ms cubic-bezier(.89,.03,.26,.99),
                 height 300ms cubic-bezier(.89,.03,.26,.99);
