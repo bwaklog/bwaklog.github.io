@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 body {
@@ -9,7 +8,7 @@ body {
     font-family: 'JetBrains Mono','Fira Mono',monospace;
 
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -18,8 +17,6 @@ body {
 }
 
 nav {
-    /* background-color: rgba(255, 255, 255, 0.131); */
-    /* backdrop-filter: blur(7px); */
     position: sticky;
     display: flex;
     justify-content:center;
@@ -84,12 +81,12 @@ nav {
 }
 
 .container {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     & > * {
         margin: 20px;
     }
@@ -106,7 +103,7 @@ nav {
     -moz-user-select: none;
     user-select: none;
     & > img {
-        width: 15rem;
+        width: 12rem;
         margin: 15px;
         border-radius: 5px;
         user-select: none;
@@ -139,32 +136,27 @@ nav {
     justify-content: center;
     background-color: transparent;
     width: 80%;
+    max-width: 45vh;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.513);
     color: white;
     box-shadow: none;
     padding: 5px;
-    /* border: solid 2px rgba(255, 255, 255, 0.361); */
-    border-radius: 4px;
-    /* border-color: transparent; */
-    font-size: 2.1rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
     font-weight: 600;
     margin: 10px;
 
-    transition: color 800ms cubic-bezier(1,-0.01,0,1),
-    background-color 150ms cubic-bezier(1,-0.01,0,1),
-    box-shadow 150ms cubic-bezier(1,-0.01,0,1)
-    border 150ms cubic-bezier(1, -0.01, 0, 1)
-    -webkit-backdrop-filter 150ms cubic-bezier(1, -0.01, 0, 1);
+    transition: color 300ms cubic-bezier(1,-0.01,0,1),
+    background-color 300ms cubic-bezier(1,-0.01,0,1),
+    box-shadow 300ms cubic-bezier(1,-0.01,0,1),
+    border 300ms cubic-bezier(1, -0.01, 0, 1),
+    -webkit-backdrop-filter 300ms cubic-bezier(1, -0.01, 0, 1);
 
     &:hover {
         color: black;
-
-        /* border: solid 2px white; */
         background-color: #d2d2d2d9;
-
-
-        /* box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.302); */
     }
 
     & > span {
@@ -186,6 +178,54 @@ nav {
     font-family: 'Pixelify Sans', cursive;
 }
 
+.linkedin {
+    font-family: sans-serif;
+}
+
 .behance {
     font-family: 'Gochi Hand', cursive;
+}
+
+.mini-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.minilink {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(0, 0, 0, 0.397);
+    border: 3px solid rgba(255, 255, 255, 0.513);
+
+    border-radius: 50px;
+
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 300ms cubic-bezier(1, -0.01, 0, 1);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.746);
+    }
+
+    margin-inline: 15px;
+
+    & > img {
+        width: 1.6rem;
+
+        filter: invert();
+        -webkit-filter: invert();
+        transition: filter 300ms cubic-bezier(1, -0.01, 0, 1),
+        -webkit-filter 300ms cubic-bezier(1, -0.01, 0, 1);
+        &:hover {
+            filter: none;
+        }
+    }
 }
