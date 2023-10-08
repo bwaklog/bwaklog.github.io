@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 body {
     background-color: black;
     color: white;
-    font-family: monospace;
+    font-family: 'JetBrains Mono','Fira Mono',monospace;
+
+    overflow-x: hidden;
     overflow-y: hidden;
 
     -webkit-user-select: none;
@@ -11,19 +18,33 @@ body {
 }
 
 nav {
+    /* background-color: rgba(255, 255, 255, 0.131); */
+    /* backdrop-filter: blur(7px); */
+    position: sticky;
     display: flex;
     justify-content:center;
     align-items: center;
-    & > img {
-        width: 80px;
-        height: 80px;
+
+    & > div {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 0;
+        margin: 1rem;
+        background: radial-gradient(ellipse, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0) 95%);
     }
-    & > * {
-        padding: 20px;
-        padding-right: 20px;
-        font-size: 3rem;
+
+    & > div > img {
+        width: 50px;
+        height: 50px;
+    }
+    & > div > * {
+        padding-inline: 10px;
+        font-size: 2.5rem;
         font-weight: 900;
-        
+        margin: 0;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.266);
+
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
@@ -32,8 +53,8 @@ nav {
 }
 
 .background-text {
-    margin: 0;
-    position: absolute;
+    margin: .8rem;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -45,8 +66,10 @@ nav {
     color: inherit;
 
     overflow-y: hidden;
+    overflow: hidden;
 
     & > p {
+        word-spacing: -1rem;
         margin: 0;
         word-break: break-all;
 
@@ -55,6 +78,103 @@ nav {
         user-select: none;
     };
 
-    font-size: 32px;
+    font-size: 2.5rem;
     font-weight: 900;
+
+}
+
+.container {
+    transform: translateY(-10%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    & > * {
+        margin: 20px;
+    }
+    
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    & > img {
+        width: 15rem;
+        margin: 15px;
+        border-radius: 5px;
+        user-select: none;
+    }
+    & > p {
+        margin: 0;
+    }
+    margin-bottom: 50px;
+}
+
+.title,
+.subtitle {
+    backdrop-filter: blur(12px);
+    margin: 15px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    opacity: 0.8;
+}
+.subtitle {
+    font-size: 1rem; 
+    color: red;
+    font-weight: 500;
+}
+
+.btnlink {
+    background-color: transparent;
+    width: 80%;
+    backdrop-filter: blur(12px);
+    color: white;
+    box-shadow: none;
+    border: solid;
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin: 10px;
+    transition: color 150ms cubic-bezier(1,-0.01,0,1),
+    background-color 150ms cubic-bezier(1,-0.01,0,1),
+    box-shadow 150ms cubic-bezier(1,-0.01,0,1);
+
+    &:hover {
+        color: black;
+
+        border: solid;
+        background-color: #a4a19a;
+        border-color: transparent;
+
+        box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.302);
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.github {
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.behance {
+    font-family: 'Gochi Hand', cursive;
 }
