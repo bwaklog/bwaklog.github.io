@@ -81,7 +81,7 @@ nav {
 }
 
 .container {
-    transform: translateY(-5%);
+    transform: translateY(0%);
     display: flex;
     justify-content: center;
     flex-direction: column;
