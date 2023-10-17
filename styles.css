@@ -218,7 +218,7 @@ nav {
     margin-inline: 15px;
 
     & > img {
-        width: 1.6rem;
+        width: 1.2rem;
 
         filter: invert();
         -webkit-filter: invert();
