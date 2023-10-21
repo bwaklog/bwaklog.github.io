@@ -1,0 +1,33 @@
+{
+    "name": "bwaklog",
+    "short_name": "bwaklog",
+
+    "description": "Homepage for my portfolio - Aditya Hegde",
+   
+    "start_url": "/index.html",
+   
+    "background_color": "#000000",
+    "theme_color": "#000000",
+
+    "display": "standalone", 
+   
+    "icons": [
+        {
+          "src": "resources/icon@144.png",
+          "type": "image/png",
+          "size": "144x144",
+          "purpose": "any"
+        },
+        {
+          "src": "resources/icon.png",
+          "type": "image/png",
+          "size": "320x320",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "resources/icon@512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ]
+  }

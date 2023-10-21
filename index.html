@@ -8,13 +8,15 @@
       name="description"
       content="This is the home page, giving an access to all my social profiles in github, linkedin, behance, twitter and instagram. This is going to be the host of my blogs, photography and some other stuff!"
     />
+    <meta name="theme-color" content="#000000" />
     <title>bwaklog</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="resources/favicon.png"
     />
+    <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
     <nav>
@@ -107,9 +109,24 @@
           target="_blank"
           ><img src="resources/twitter.png" alt="instagram icon"
         /></a>
+        <a
+          class="minilink notes"
+          href="https://drive.google.com/drive/folders/1vf2uLuD30Mzc32woLFKYLH2tFIaKNGTO?usp=sharing"
+          target="_blank"
+          style="font-size: 1em"
+          ><img src="resources/notes.png" alt="notes icon" />
+          <p>:D</p></a
+        >
       </div>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register("/bwaklog.github.io/sw.js", {
+          scope: "/bwaklog.github.io/",
+        });
+      }
+    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>
