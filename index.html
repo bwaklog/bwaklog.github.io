@@ -9,7 +9,14 @@
       content="This is the home page, giving an access to all my social profiles in github, linkedin, behance, twitter and instagram. This is going to be the host of my blogs, photography and some other stuff!"
     />
     <meta name="theme-color" content="#000000" />
-    <title>bwaklog</title>
+
+    <meta property="og:title" content="Aditya Hegde" />
+    <meta property="og:url" content="https://bwaklog.github.io/" />
+    <meta property="og:description" content="description of your website/webpage" />
+    <meta property="og:image" content="resources/ogpfp.jpg" />
+    <meta property="og:type" content="website" />
+
+    <title>Aditya Hegde</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link
       rel="shortcut icon"
@@ -109,7 +116,19 @@
           target="_blank"
           ><img src="resources/twitter.png" alt="instagram icon"
         /></a>
-        <a class="minilink notes" href="notes.html" style="font-size: 1em"
+        <a
+          class="minilink notes"
+          style="font-size: 1em"
+          onclick="
+          if ( prompt('💂💂💂💂\nTo access, password enter, you must.\nStrong password, choose you should.\nOr else, forbidden stuff, access you cannot.\nHmm, hmm.') == 'frankandbean')
+          {
+            location.href = 'notes.html';
+          }
+          else
+          {
+            location.href = 'index.html'
+          }
+          "
           ><img src="resources/notes.png" alt="notes icon" />
           <p>/notes</p></a
         >
