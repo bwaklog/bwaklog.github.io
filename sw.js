@@ -14,8 +14,6 @@ var VERSION = 'version_01';
 // others to this list
 var URLS = [    
   `${GHPATH}/resources/`,
-  `${GHPATH}/semester/`
-  `${GHPATH}/semester/CompSci`
   `${GHPATH}/index.html`,
   `${GHPATH}/css/styles.css`,
   `${GHPATH}/js/app.js`

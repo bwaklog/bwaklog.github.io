@@ -17,9 +17,9 @@ body {
 }
 
 nav {
-    position: sticky;
+    /* position: fixed; */
     display: flex;
-    justify-content:center;
+    /* justify-content:center; */
     align-items: center;
 
     & > div {
@@ -32,12 +32,12 @@ nav {
     }
 
     & > div > img {
-        width: 50px;
-        height: 50px;
+        width: 1em;
+        height: 1em;
     }
     & > div > * {
         padding-inline: 10px;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 900;
         margin: 0;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.266);
@@ -81,7 +81,7 @@ nav {
 }
 
 .container {
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -103,15 +103,15 @@ nav {
     -moz-user-select: none;
     user-select: none;
     & > img {
-        width: 12rem;
-        margin: 15px;
-        border-radius: 5px;
+        width: 6rem;
+        margin: 10px;
+        border-radius: 100em;
         user-select: none;
     }
     & > p {
         margin: 0;
     }
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .title,
