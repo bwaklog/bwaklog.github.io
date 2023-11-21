@@ -14,7 +14,7 @@ body {
     -moz-user-select: none;
     user-select: none;
 
-    background: radial-gradient(ellipse at 50% 50%, #28007100, #1f0000);
+    background: radial-gradient(circle at 50% 50%, #000000, #000000);
     transition: background-position 0.3s ease-out;
 }
 
