@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
     background-color: rgb(0, 0, 0);
@@ -174,6 +175,13 @@ nav {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+}
+
+.blog {
+    font-family: 'Victor Mono';
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 .github {
