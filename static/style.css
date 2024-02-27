@@ -20,7 +20,7 @@ body {
   align-items: center;
   gap: 2rem;
 
-  margin-inline: 5rem;
+  margin-inline: 2rem;
 }
 
 nav {
@@ -39,7 +39,11 @@ a {
   align-items: center;
 }
 
+.body > p {
+  margin-inline: 2rem;
+}
+
 img {
-  height: 500px;
+  height: 250px;
   width: auto;
 }
