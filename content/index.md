@@ -6,4 +6,4 @@ title: Home
 ### Henlo!
 A computer science student and tech enthusiast. Welcome to my home on the internet.
 
-![demo-image](static/plane.jpg)
+![image of me](https://i.imgur.com/bwyyTNF.jpg)
