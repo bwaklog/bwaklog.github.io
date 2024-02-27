@@ -1,14 +1,14 @@
 ---
-date: 23-11-2023
+date: 08-12-2023
 title: Hello World
 draft: false
 ---
 
-Hello World 🌊
-
-8th Dec 2023
-
+# Hello World 🌊
+8th Dec 2023 |
 Aditya Hegde
+
+---
 
 ![pic of me](https://i.imgur.com/ppTDKQv.jpg)
 

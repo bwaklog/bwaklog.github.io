@@ -26,6 +26,10 @@ body {
 nav {
   display: flex;
   gap: 2rem;
+
+  & > a {
+    font-size: 1.3rem;
+  }
 }
 
 a {
@@ -40,10 +44,50 @@ a {
 }
 
 .body > p {
-  margin-inline: 2rem;
+  /* margin-inline: 2rem; */
+  margin: auto;
+}
+
+.body > a {
+  font-size: 1.8rem;
 }
 
 img {
-  height: 250px;
+  height: 35rem;
   width: auto;
+  border-radius: .2rem;
+
+  transition: opacity 300ms ease-in-out;
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+ul > li {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+  body {
+    margin-inline: 1rem;
+    text-align: justify;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  ul > li {
+    font-size: 1.3rem;
+  }
+
+  .body > a {
+    font-size: 1.5rem;
+  }
 }
