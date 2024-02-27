@@ -4,7 +4,7 @@ title: Xkcd Grab Presentation
 draft: false
 ---
 
-🏗️ \[Draft\] _Work in progress_
+# XKCD Cli, Fuzzy Matching and Web Scraping
 
 I recently got the oppourtunity to take part in the project expo hosted by the club HSP part of PESU ECity campus. As part of this expo, I presented one of my on going projects [xkcd-grab](http://github.com/bwaklog/xkcd-grab) infront of an amazing crowd.
 
