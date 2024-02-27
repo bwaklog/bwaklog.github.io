@@ -27,18 +27,28 @@ nav {
   gap: 2rem;
 
   & > a {
-      color: #4592AF;
       font-size: 1.65rem;
-      text-decoration: none;
   }
 
-  & > a:hover {
-      text-decoration: underline;
-  }
 }
 
 a {
-  color: white;
+    color: white;
+    text-decoration: underline;
+    /* make sure text is not selectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+a:hover {
+    color: #4592af;
+    text-decoration: none;
+}
+
+a:active {
+    color: #4592af;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
