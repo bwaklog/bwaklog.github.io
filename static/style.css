@@ -124,15 +124,26 @@ img {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 .posts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin: auto;
 
   & > a {
+      background-color: #41414141;
+      border-radius: 5px;
+      margin: .5rem;
+      padding: .5rem;
       font-size: 2rem;
+      word-wrap: break-word;
+      text-align: center;
+
+      transition: background-color 150ms ease-in-out;
+  }
+
+  & > a:hover {
+    background-color: #4141417a;
   }
 
 }
