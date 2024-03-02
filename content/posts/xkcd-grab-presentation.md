@@ -1,7 +1,7 @@
 ---
 date: 09-12-2023
 title: Xkcd Grab Presentation
-draft: true
+draft: false 
 ---
 
 # XKCD Cli, Fuzzy Matching and Web Scraping
