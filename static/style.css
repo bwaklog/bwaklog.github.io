@@ -13,10 +13,6 @@
     src: url(./fonts/Roboto/RobotoSlab-Regular.ttf);
 }
 
-@root {
-    --secondary-colors: #cd5d42; 
-}
-
 
 body {
 
@@ -65,7 +61,7 @@ nav {
 }
 
 a {
-    color: #cd5d42;
+    color:#5990ac;
     text-decoration: none;
 
     /* font-size: 1.4rem; */
@@ -91,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     word-break: break-word;
 
-    color: #cd5d42;
+    color: #5990ac;
 }
 
 h1 { font-size: 3rem;}
