@@ -1,5 +1,5 @@
 ---
-date: 2023-12-08
+date: 2023-12-09
 title: Xkcd Grab Presentation
 draft: false 
 type: post
