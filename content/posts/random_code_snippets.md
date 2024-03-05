@@ -1,6 +1,6 @@
 ---
 date: 2024-03-05
-draft: true
+draft: false
 title: Random Code Snippets
 type: post
 ---
