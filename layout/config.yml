@@ -1,6 +1,6 @@
 navbar:
     - index
-    - docs
+    - about
     - posts
 baseURL: https://ssg-test-org.github.io/
 plugins:
