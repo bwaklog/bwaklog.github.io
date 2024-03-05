@@ -1,5 +1,7 @@
 navbar:
     - index
-    - about
+    - docs
     - posts
-baseURL: http://localhost:8000/
+baseURL: https://ssg-test-org.github.io/
+plugins:
+    - prism.js

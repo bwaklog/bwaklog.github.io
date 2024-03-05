@@ -1,12 +1,13 @@
 ---
-date: 08-12-2023
+date: 2023-12-08
 title: Hello World
 draft: false
+type: post
 ---
 
 # Hello World 🌊
-8th Dec 2023 |
-Aditya Hegde
+
+8th Dec 2023 | Aditya Hegde
 
 ---
 
@@ -17,4 +18,4 @@ Welcome to my mini blog! I am currently pursuing a B.Tech in Computer Science En
 
 Through this blog, I would love to share all the research work I'll be workign on, Projects i've started and share some stuff that I find really interesting. I'll also be sharing some of my notes that have helped learn during my preparation. I'm a fan of open-source collaboration and other stuff and this probably the only place to store my rants 🥳
 
-Currently running on my teams custom static site generator ❤️
+Currently running on my teams custom [static site generator](https://github.com/acmpesuecc/ssg) ❤️
