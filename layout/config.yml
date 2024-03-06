@@ -1,6 +1,7 @@
 navbar:
   - index
   - about
+  - anna
   - posts
 baseURL: https://ssg-test-org.github.io/
 plugins:
