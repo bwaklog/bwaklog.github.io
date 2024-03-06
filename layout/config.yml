@@ -4,4 +4,4 @@ navbar:
   - posts
 baseURL: https://ssg-test-org.github.io/
 plugins:
-author: Hegde
+author: hegde
