@@ -1,8 +1,9 @@
 ---
 date: 2023-12-09
 title: Xkcd Grab Presentation
-draft: false 
+draft: false
 type: post
+description: My presentation in the 2023 HSP Project Expo. xkcd-grab demonstration, fuzzy searchinig, web scraping and more.
 ---
 
 # XKCD Cli, Fuzzy Matching and Web Scraping
@@ -17,6 +18,6 @@ This relatively small project is somewhat of a playground for me to explore diff
 
 The CLI itself is a minimal working tool I wrote with python. Besides using the api, i've created several extra features that completely changed original idea of the app. This project begun in 2021, during my college entrance preparations. It started off as a basic API tool that worked with the xkcd api to fetch a comic based on a derised number. Looked cool at the time but was still pretty clunky. Why would you want to search something _based on a number_. Thats horrible
 
-![whatsapp chats](https://i.imgur.com/Gzhcsps.jpg) 
+![whatsapp chats](https://i.imgur.com/Gzhcsps.jpg)
 
 Well, the cli tool couldn't do that _initially_. This is when decided to implement some cool way you can interact with the cli, and find the comic right from your terminal.

@@ -3,12 +3,13 @@ date: 2024-03-05
 draft: false
 title: Random Code Snippets
 type: post
+description: Random code snippets and my really stupid language yake
 ---
 
 ## struct in rust
 
 ```rust
-struct Vector2D {    
+struct Vector2D {
     x: f64,
     y: f64,
 }
@@ -47,7 +48,7 @@ void ex(int *v, char *syn){
             case 62: if(st!=1){*v = *v>>1;}else{printf("synerr");return;} break;
             case 64: if(st == 1){st = 0;*p=*v;}else{st=1;} break;
             case 38: if(st == 1){st = 0;*v=*p;}else{st=1;}break;// & is used to get value
-            
+
             // operations, st == 1, for subsequent value for operation type
             case 37: if(st==1){
                 syn++;
@@ -73,4 +74,3 @@ void ex(int *v, char *syn){
     return;
 }
 ```
-
