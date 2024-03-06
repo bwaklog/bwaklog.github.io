@@ -5,7 +5,7 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: [main]
-# Listen to changes in the ssg application repo
+  # Listen to changes in the ssg application repo
   repository_dispatch:
 
   # Allows you to run this workflow manually from the Actions tab
@@ -26,62 +26,61 @@ concurrency:
 defaults:
   run:
     shell: bash
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-   
-    - name: Clone the ssg application repo and copy content to be rendered
-      run: |
-        git clone https://github.com/acmpesuecc/ssg.git
-        cd ssg/
-        rm -rf content/ static/ layout/{config.yml,partials/footer.html}
-        cp -r ../{content,static,layout} ./
+      - uses: actions/checkout@v4
 
-    - name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.22'
+      - name: Clone the ssg application repo and copy content to be rendered
+        run: |
+          git clone https://github.com/acmpesuecc/ssg.git
+          cd ssg/
+          rm -rf content/ layout/{config.yml}
+          cp -r ../{content,layout} ./
 
-    - name: Build ssg
-      run: |
-        cd ssg/
-        go build
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.22"
 
-    - name: Build site with ssg
-      run: |
-        cd ssg/
-        ./ssg
-        cp -r ./rendered/ ../
-        
-    - name: Upload artifact
-      uses: actions/upload-artifact@master
-      with:
-        path: 'rendered'
-        if-no-files-found: error
+      - name: Build ssg
+        run: |
+          cd ssg/
+          go build
+
+      - name: Build site with ssg
+        run: |
+          cd ssg/
+          ./ssg
+          cp -r ./rendered/ ../
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          path: "rendered"
+          if-no-files-found: error
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    
+
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     steps:
-    - name: Download rendered
-      uses: actions/download-artifact@master
+      - name: Download rendered
+        uses: actions/download-artifact@master
 
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: 'artifact'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "artifact"
 
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
-    
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
