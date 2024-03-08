@@ -1,10 +1,11 @@
 ---
 date: 2023-12-09
 title: Xkcd Grab Presentation
-draft: false
+draft: true
 type: post
 description: My presentation in the 2023 HSP Project Expo. xkcd-grab demonstration, fuzzy searchinig, web scraping and more.
 tags:
+    - hsp
     - python
     - talks
     - cli

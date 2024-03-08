@@ -5,8 +5,9 @@ description: My Internet Home
 previewimage: /static/me.jpeg
 ---
 
-### Heji! I'm Aditya Hegde
+## Hej! I'm Aditya Hegde
 
 Welcome to my home on the internet!
 
 ![waving bear](https://i.giphy.com/IThjAlJnD9WNO.webp)
+

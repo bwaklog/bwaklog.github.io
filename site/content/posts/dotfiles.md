@@ -1,6 +1,6 @@
 ---
 date: 2024-03-08
-title: Dotfiles 🍅
+title: Dotfiles
 draft: false
 type: post
 description: Here are some things I cant live without
@@ -8,6 +8,8 @@ previewimage: https://i.imgur.com/TR4Dkq4.jpg
 tags:
     - blog
 ---
+
+8th Mar 2024 | Aditya Hegde
 
 ## My Most Used terminal tools
 
