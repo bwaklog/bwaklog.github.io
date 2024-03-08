@@ -1,0 +1,13 @@
+{{define "header"}}
+<header>
+  <nav>
+    {{range .Layout.Navbar}}
+    {{ if eq . "index" }}
+    <a href="/">[{{ $.Layout.Author }}]</a>
+    {{else}}
+    <a href="/{{.}}.html">[{{.}}]</a>
+    {{end}}
+    {{end}}
+  </nav>
+</header>
+{{end}}
