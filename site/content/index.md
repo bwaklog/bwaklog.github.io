@@ -5,11 +5,8 @@ description: My Internet Home
 previewimage: /static/me.jpeg
 ---
 
-### Henlo!
-A computer science student and tech enthusiast. Welcome to my home on the internet.
+### Heji! I'm Aditya Hegde
 
-![image of me](https://i.imgur.com/sZRao4r.png)
+Welcome to my home on the internet!
 
-## Socials
-
-[Github](https://github.com/bwaklog) [Instagram](https://instagram.com/adi.hegdee) [Twitter](https://twitter.com/bwaklog) [Spotify](https://open.spotify.com/user/w9vdz11v5ijqerslglni37qmk?si=013aab2a77bd430e)
+![waving bear](https://i.giphy.com/IThjAlJnD9WNO.webp)
