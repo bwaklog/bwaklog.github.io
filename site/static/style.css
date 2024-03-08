@@ -278,6 +278,7 @@ dd>code,
 td>code {
     font-family: agave, monospace;
     background: #41414193;
+    color: #f38ba8;
     border: 1.5px solid #ffffff35;
     border-radius: 5px;
     word-wrap: break-word;
