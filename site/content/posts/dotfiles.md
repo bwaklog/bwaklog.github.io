@@ -1,7 +1,7 @@
 ---
 date: 2024-03-08
 title: Dotfiles
-draft: false
+draft: true
 type: post
 description: Here are some things I cant live without
 previewimage: https://i.imgur.com/TR4Dkq4.jpg 
