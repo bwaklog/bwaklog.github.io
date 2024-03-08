@@ -2,7 +2,8 @@ navbar:
   - index
   - about
   - anna
+  - tags
   - posts
-baseURL: https://ssg-test-org.github.io/
+baseURL: https://hegde.live/
 plugins:
 author: hegde

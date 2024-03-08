@@ -4,6 +4,11 @@ title: Xkcd Grab Presentation
 draft: false
 type: post
 description: My presentation in the 2023 HSP Project Expo. xkcd-grab demonstration, fuzzy searchinig, web scraping and more.
+tags:
+    - python
+    - talks
+    - cli
+    - blog
 ---
 
 # XKCD Cli, Fuzzy Matching and Web Scraping

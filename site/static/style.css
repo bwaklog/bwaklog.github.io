@@ -153,6 +153,17 @@ img {
     margin-bottom: 2rem;
 }
 
+.tag-placeholder {
+    display: flex;
+}
+
+.tag {
+    display: inline;
+    border: 0.1px solid white;
+    width: fit-content;
+    padding: 0.3rem;
+}
+
 .posts {
     display: flex;
     flex-direction: column;

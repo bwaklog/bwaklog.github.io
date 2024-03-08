@@ -4,6 +4,8 @@ title: Hello World
 draft: false
 type: post
 description: Introductory post to my blog site
+tags:
+    - blog
 ---
 
 # Hello World 🌊

@@ -35,10 +35,10 @@ jobs:
 
       - name: Clone the ssg application repo and copy content to be rendered
         run: |
-          git clone https://github.com/acmpesuecc/ssg.git
+          git clone https://github.com/acmpesuecc/anna.git
           cd ssg/
-          rm -rf content/ static/style.css layout/{config.yml}
-          cp -r ../{content,static,layout} ./
+          rm -rf site/content/ site/static/style.css site/layout/{config.yml}
+          cp -r ..static/{content,static,layout} ./
 
       - name: Set up Go
         uses: actions/setup-go@v4
@@ -54,7 +54,7 @@ jobs:
         run: |
           cd ssg/
           ./ssg
-          cp -r ./rendered/ ../
+          cp -r .site/rendered/ ../
 
       - name: Upload artifact
         uses: actions/upload-artifact@master

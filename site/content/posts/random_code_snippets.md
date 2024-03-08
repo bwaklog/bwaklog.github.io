@@ -4,6 +4,10 @@ draft: false
 title: Random Code Snippets
 type: post
 description: Random code snippets and my really stupid language yake
+tags: 
+    - rust
+    - c
+    - code
 ---
 
 ## struct in rust
