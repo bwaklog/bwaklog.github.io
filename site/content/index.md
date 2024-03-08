@@ -1,6 +1,8 @@
 ---
 date: 2024-02-24
-title: Home
+title: Aditya Hegde
+description: My Internet Home
+previewimage: /site/static/me.jpeg
 ---
 
 ### Henlo!

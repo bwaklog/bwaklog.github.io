@@ -153,6 +153,23 @@ img {
     margin-bottom: 2rem;
 }
 
+.all-tags, .tagged-posts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    & > a {
+        font-size: 1.2rem;
+        background-color: #1e1e2d;
+        border-radius: 5px;
+        padding: .5rem;
+        margin: .3rem;
+
+    }
+    
+}
+
 .tag-placeholder {
     display: flex;
 }
@@ -300,3 +317,4 @@ td>code {
         font-size: 1.5rem;
     }
 }
+
