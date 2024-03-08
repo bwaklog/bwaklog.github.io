@@ -241,6 +241,11 @@ img {
     }
 }
 
+.post-card.description {
+    padding: 0;
+    margin: 0;
+}
+
 .body > img {
     /* center the image wrt the screen*/
     display: block;
