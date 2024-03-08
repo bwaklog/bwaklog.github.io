@@ -242,8 +242,10 @@ img {
 }
 
 .post-card.description {
-    padding: 0;
-    margin: 0;
+    & > p {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .body > img {
