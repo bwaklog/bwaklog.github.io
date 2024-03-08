@@ -38,19 +38,19 @@ jobs:
           git clone https://github.com/acmpesuecc/anna.git
           cd anna/
           rm -rf site/content/ site/static/style.css site/layout/{config.yml}
-          cp -r ..site/{content,static,layout} ./
+          cp -r ../site/{content,static,layout} ./
 
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
           go-version: "1.22"
 
-      - name: Build ssg
+      - name: Build anna
         run: |
           cd anna/
           go build
 
-      - name: Build site with ssg
+      - name: Build site with anna
         run: |
           cd anna/
           ./anna
