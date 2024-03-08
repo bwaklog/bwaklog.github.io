@@ -36,7 +36,7 @@ jobs:
       - name: Clone the ssg application repo and copy content to be rendered
         run: |
           git clone https://github.com/acmpesuecc/anna.git
-          cd ssg/
+          cd anna/
           rm -rf site/content/ site/static/style.css site/layout/{config.yml}
           cp -r ..static/{content,static,layout} ./
 
@@ -47,13 +47,13 @@ jobs:
 
       - name: Build ssg
         run: |
-          cd ssg/
+          cd anna/
           go build
 
       - name: Build site with ssg
         run: |
-          cd ssg/
-          ./ssg
+          cd anna/
+          ./anna
           cp -r .site/rendered/ ../
 
       - name: Upload artifact
