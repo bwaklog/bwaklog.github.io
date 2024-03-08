@@ -38,7 +38,7 @@ jobs:
           git clone https://github.com/acmpesuecc/anna.git
           cd anna/
           rm -rf site/content/ site/static/style.css site/layout/{config.yml}
-          cp -r ../site/{content,static,layout} ./
+          cp -r ../site/{content,static,layout} .site/
 
       - name: Set up Go
         uses: actions/setup-go@v4
