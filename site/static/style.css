@@ -8,6 +8,12 @@
     src: url(./fonts/mono/Agave-Regular.ttf);
 }
 
+
+@font-face {
+    font-family: Ioskeva;
+    src: url(./fonts/mono/Ioskeva-Regular.ttf);
+}
+
 @font-face {
     font-family: RobotoSlab;
     src: url(./fonts/Roboto/RobotoSlab-Regular.ttf);
@@ -23,12 +29,18 @@
     src: url(./fonts/VictorMono/victormono_italics.ttf);
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat/Montserrat.ttf);
+}
+
 body {
 
-    font-family: custom-font, agave, monospace;
+    font-family: Montserrat, custom-font, agave, monospace;
     line-height: 1.6;
 
     // background-color: #11111a;
+    font-weight: 400;
     background-color: #111111;
     color: #ffffff;
 
@@ -51,15 +63,18 @@ footer {
     flex: 0;
 
     font-size: .9rem;
+    font-weight: 500;
     align-self: center;
     padding: 1rem 0;
 
     text-align: center;
 
+    border-top: 2px dashed #f38ba87f;
 }
 
 nav {
     font-size: 1.1rem;
+    font-weight: 500;
 
     margin: auto;
     padding: 1rem;
@@ -71,6 +86,7 @@ nav {
     & > a {
         word-wrap: break-word;
     }
+    border-bottom: 2px dashed #f38ba87f;
 }
 
 a {
@@ -101,7 +117,7 @@ a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: RobotoSlab;
+    font-family: Montserrat, RobotoSlab;
     margin: 0;
     padding: 0;
     margin-top: .5rem;
@@ -113,10 +129,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #f38ba8;
 }
 
-h1 { font-size: 2.3rem;}
-h2 { font-size: 2.0rem;}
-h3 { font-size: 1.75rem;}
-h4 {font-size: 1.5rem;}
+h1 { font-size: 2.0rem;}
+h2 { font-size: 1.7rem;}
+h3 { font-size: 1.5rem;}
+h4 {font-size: 1.3rem;}
 
 .body {
     padding: 1rem;
@@ -204,7 +220,7 @@ img {
     margin: auto;
 
     & > a {
-        background-color: #41414141;
+        // background-color: #41414141;
         border-radius: 5px;
         margin: .5rem;
         padding: .5rem;
@@ -217,7 +233,8 @@ img {
     }
 
     & > a:hover {
-        background-color: #4141417a;
+        // background-color: #4141417a;
+        background-color: #181825;
     }
 
 }
@@ -231,6 +248,7 @@ img {
 
     & > *  {
         padding-inline: 1rem;
+        color: #b4befe5f
     }
 
     & > p {
@@ -238,11 +256,13 @@ img {
         padding: 0;
         padding-inline: 1rem;
         font-size: 1.1rem;
+        font-weight: 500;
     }
 }
 
 .post-card.description {
     & > p {
+        font-weight: 500;
         padding: 0;
         margin: 0;
     }
@@ -277,7 +297,7 @@ img {
 } */
 
 pre code {
-    font-family: agave, monospace;
+    font-family: Ioskeva, monospace;
     background: white;
     overflow-x: scroll;
     scrollbar-width: none;
@@ -292,7 +312,7 @@ p > code,
 li > code,
 dd>code,
 td>code {
-    font-family: agave, monospace;
+    font-family: Ioskeva, monospace;
     background: #41414193;
     color: #f38ba8;
     border: 1.5px solid #ffffff35;
