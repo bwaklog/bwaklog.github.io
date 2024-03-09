@@ -188,9 +188,9 @@ img {
     flex-wrap: wrap;
     
     & > a {
-        font-size: 1.2rem;
-        background-color: #1e1e1e;
-        border-radius: 5px;
+        font-size: 1.0rem;
+        // background-color: #1e1e1e;
+        // border-radius: 5px;
         padding: .5rem;
         margin: .3rem;
 
