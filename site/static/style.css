@@ -97,8 +97,8 @@ a {
     transition: color 150ms ease-in-out
 }
 
-/* Thank you, @kepano! */
-a:not(.plain):not(.tag):not(.internal-link):not(.footnote):not( .reversefootnote ):not(.post-card) {
+/* Thank you, @kepano!*/
+a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not( .reversefootnote ):not(.post-card) {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='gray' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' /%3E%3C/svg%3E%0A");
     background-position: right 33%;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ img {
     flex-wrap: wrap;
     
     & > a {
-        font-size: 1.0rem;
+        font-size: 1.1rem;
         // background-color: #1e1e1e;
         // border-radius: 5px;
         padding: .5rem;
@@ -205,7 +205,7 @@ img {
 .tag {
     display: inline-block;
     // border: 0.1px solid white;
-    background-color: #1e1e1e;
+    // background-color: #1e1e1e;
     border-radius: 2px;
     margin-right: 0.3rem;
     margin-bottom: 0.3rem;
