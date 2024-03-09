@@ -11,6 +11,10 @@ tags:
 
 8th Mar 2024 | Aditya Hegde
 
+*Updated*: 9th Mar 2024
+
+<br/>
+
 I've never had my self working on solely the terminal before. It would be only a few ocassions when the GUI alternative was simply frustrating to use. I've since foced myself to try and venture more, and now I simply can't work without them. I have even lost count for the number of times i've used vim motions accidently.
 
 At first, yes these things were a bit intriguing, but once u leave the learning curve, everything just falls in place. 
@@ -53,5 +57,3 @@ This is something i just pulled out of reddit recently and would love to share i
 ```bash
 defaults write -g NSWindowShouldDragOnGesture -bool true 
 ```
-
-<iframe width="560" height="320" src="https://i.imgur.com/KjygSxU.mp4"></iframe>
