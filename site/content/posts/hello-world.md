@@ -27,7 +27,7 @@ This site is special to me. Not only it is the place where I would like to share
 
 > failure doesn't define a person
 
-I love learning new stuff. And at the same time, I don't know what to focus on. So as of now, I'd be lying if I said I'm specifically into some system-level stuff or networking concepts... Whatever it is I'd like to share it, and what better place to do so other than my page. I believe failure does make someone stronger. There are so many physicists out there, great ones who tried but failed to read some conclusions, but ended up with something new it. There's so much more to learn.
+I love learning new stuff. And at the same time, I don't know what to focus on. So as of now, I'd be lying if I said I'm specifically into some system-level stuff or networking concepts... Whatever it is I'd like to share it, and what better place to do so other than my page. I believe failure does make someone stronger. There are so many physicists out there, great ones who tried but failed to read some conclusions, but ended up with something new, sometimes something revolutionary. There's so much more to learn.
 
 <br />
 

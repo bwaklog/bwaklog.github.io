@@ -23,8 +23,6 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 
 ## My Most Used terminal tools
 
-> This post is really random
-
 - *Text Editor*: [nvim](https://neovim.io/) as my primary config with [packer](https://github.com/wbthomason/packer.nvim)
     - honorable mention to [zed](https://zed.dev/), which has been amazing
 - *Shell*: [zsh](https://en.wikipedia.org/wiki/Z_shell) Z-Shell as my default shell with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
