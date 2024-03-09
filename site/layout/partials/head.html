@@ -7,19 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{.Frontmatter.Title}}</title>
 
-    <link rel="preload stylesheet" href="/static/style.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/tokyo-night-dark.min.css">
+	 <link rel="preload stylesheet" href="/static/style.css">
+	 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/tokyo-night-dark.min.css">
 
-    <link rel="alternate" type="application/atom+xml" title="feed" href="/feed.atom">
+	 <!-- Hopefully some working clipboard copying -->
+	 <script src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js" defer></script>
+	 <link rel="stylesheet" href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css" />
 
-    {{range .Frontmatter.JSFiles}}
+	 <link rel="alternate" type="application/atom+xml" title="feed" href="/feed.atom">
+
+	 {{range .Frontmatter.JSFiles}}
     <script src="/script/{{.}}" defer></script>
     {{end}}
 
     {{range .Layout.SiteScripts}}
     <script src="/script/{{.}}" defer></script>
     {{end}}
+
 
     <link rel="icon" type="image/x-icon" href="/static/favicon.png">
     <meta property="og:type" content="website">
