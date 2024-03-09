@@ -333,6 +333,7 @@ blockquote {
     }
 
     border-left: 3px solid #f38ba8;
+	 margin-left: 0px;
 }
 
 @media (max-width: 1200px) {

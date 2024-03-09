@@ -21,7 +21,7 @@ Aditya Hegde
 
 I've never had my self working on solely the terminal before. It would be only a few ocassions when the GUI alternative was simply frustrating to use. I've since foced myself to try and venture more, and now I simply can't work without them. I have even lost count for the number of times i've used vim motions accidently.
 
-At first, yes these things were a bit intriguing, but once u leave the learning curve, everything just falls in place. 
+At first, yes these things were a bit intriguing, but once u leave the learning curve, everything just falls in place. You can find my dotfiles [here](https://github.com/bwaklog) 
 
 ![xkcd 1168 tar](https://imgs.xkcd.com/comics/tar_2x.png)
 
@@ -36,7 +36,8 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 
 ```bash
 ❯ history | awk '{print $2}' | sort | uniq -c | sort -nr | head
-
+```
+```text
  821 git
  436 nvim
  406 cd
