@@ -54,4 +54,4 @@ This is something i just pulled out of reddit recently and would love to share i
 defaults write -g NSWindowShouldDragOnGesture -bool true 
 ```
 
-<a href="https://imgur.com/KjygSxU"><img src="https://i.imgur.com/KjygSxU.mp4" title="source: imgur.com" /></a>
+<iframe width="560" height="320" src="https://i.imgur.com/KjygSxU.mp4"></iframe>
