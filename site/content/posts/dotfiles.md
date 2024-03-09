@@ -1,6 +1,6 @@
 ---
 date: 2024-03-08
-title: Dotfiles
+title: Workflow
 draft: false
 type: post
 description: Here are some things I cant live without
@@ -9,9 +9,13 @@ tags:
     - blog
 ---
 
-8th Mar 2024 | Aditya Hegde
+# Workflow
 
-*Updated*: 9th Mar 2024
+Aditya Hegde
+
+8th Mar 2024
+
+(**Updated**) 9th Mar 2024
 
 <br/>
 

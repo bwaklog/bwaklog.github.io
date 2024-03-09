@@ -11,7 +11,9 @@ tags:
 
 # Hello World 🌊
 
-8th Dec 2023 | Aditya Hegde
+Aditya Hegde
+
+8th Dec 2023
 
 <br/>
 
