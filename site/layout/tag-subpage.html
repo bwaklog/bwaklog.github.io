@@ -6,11 +6,11 @@
 
   <div class="body">
     
-      <h2><span style="color: #ffffff;">#</span>{{ .Frontmatter.Title }} Collection</h2>
+      <h3><span style="color: #ffffff;">#</span>{{ .Frontmatter.Title }} Collection</h3>
 
     <div class="tagged-posts">
         {{range .MergedTags}}
-        #<a class="post-tag" href="/{{.URL}}">{{.Frontmatter.Title}}</a>
+        <a class="post-tag" href="/{{.URL}}"><span style="color: white;">#</span>{{.Frontmatter.Title}}</a>
         {{end}}
     </div>
 

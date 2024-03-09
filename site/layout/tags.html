@@ -6,11 +6,11 @@
 
   <div class="body">
     
-    <h2>Site Index</h2>
+    <h3>Site Index</h3>
 
     <div class="all-tags">
         {{range .Tags}}
-        #<a class="post-tag" href="tags/{{.}}.html">{{.}}</a>
+        <a class="post-tag" href="tags/{{.}}.html"><span style="color: white;">#</span>{{.}}</a>
         {{end}}
     </div>
 
