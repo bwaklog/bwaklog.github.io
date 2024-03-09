@@ -1,0 +1,24 @@
+{{ define "tag-subpage"}}
+{{ template "head" .}}
+
+<body>
+  {{template "header" .}}
+
+  <div class="body">
+    
+    <h1>{{.Tag}}</h1>
+
+    <div class="tagged-posts">
+        {{range .MergedTags}}
+        <a href="/{{.URL}}">{{.Frontmatter.Title}}</a>
+        {{end}}
+    </div>
+
+  </div>
+
+  {{template "footer" .}}
+</body>
+
+</html>
+
+{{ end}}
