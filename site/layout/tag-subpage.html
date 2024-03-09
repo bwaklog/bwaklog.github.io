@@ -10,7 +10,7 @@
 
     <div class="tagged-posts">
         {{range .MergedTags}}
-        <a class="post-tag" href="/{{.URL}}"><span style="color: white;">#</span>{{.Frontmatter.Title}}</a>
+        <a href="/{{.URL}}">{{.Frontmatter.Title}}</a>
         {{end}}
     </div>
 
