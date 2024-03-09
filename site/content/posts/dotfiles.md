@@ -48,7 +48,7 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
  199 make
   81 tmux
 ```
-(ps) I recently cleared my `zsh_history` and as you can see, i struggle with git a lot 😅
+(ps) I recently cleared my `zsh_history` and as you can see, i struggle with git a lot
 
 ![Imgur](https://i.imgur.com/TR4Dkq4.jpg)
 
