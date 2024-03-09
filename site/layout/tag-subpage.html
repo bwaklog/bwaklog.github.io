@@ -8,9 +8,17 @@
     
       <h3><span style="color: #ffffff;">#</span>{{ .Frontmatter.Title }} Collection</h3>
 
-    <div class="tagged-posts">
+    <div class="posts">
         {{range .MergedTags}}
-        <a href="/{{.URL}}">{{.Frontmatter.Title}}</a>
+        <a class="post-card" href="/{{.URL}}.html">
+            <div class="post-card-div">
+                <div class="post-card description">
+                    <h3>{{.Frontmatter.Title}}</h3>
+                    <p>{{.Frontmatter.Description}}</p>
+                </div>
+                <p>{{.Frontmatter.Date}}</p>
+            </div>
+        </a>
         {{end}}
     </div>
 
