@@ -19,7 +19,7 @@ Aditya Hegde
 
 <br/>
 
-I've never had my self working on solely the terminal before. It would be only a few ocassions when the GUI alternative was simply frustrating to use. I've since foced myself to try and venture more, and now I simply can't work without them. I have even lost count for the number of times i've used vim motions accidently.
+I've never had my self working on solely the terminal before. It would be only a few occasions when the GUI alternative was simply frustrating to use. I've since forced myself to try and venture more, and now I simply can't work without them. I have even lost count for the number of times i've used vim motions accidentally.
 
 At first, yes these things were a bit intriguing, but once u leave the learning curve, everything just falls in place. You can find my dotfiles [here](https://github.com/bwaklog) 
 
@@ -27,7 +27,7 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 
 ## My Most Used terminal tools
 
-- *Text Editor*: [nvim](https://neovim.io/) as my primary config with [packer](https://github.com/wbthomason/packer.nvim)
+- *Text Editor*: [nsim](https://neovim.io/) as my primary config with [packer](https://github.com/wbthomason/packer.nvim)
     - honorable mention to [zed](https://zed.dev/), which has been amazing
 - *Shell*: [zsh](https://en.wikipedia.org/wiki/Z_shell) Z-Shell as my default shell with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 - *WM*: [Amethyst](https://github.com/ianyh/Amethyst) as my Window Manager
@@ -56,7 +56,7 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 
 ## Extras
 
-This is something i just pulled out of reddit recently and would love to share it. Thanks to [u/77ilham77](https://reddit.com/u/77ilham77), there is a way to move windows without the title bar and I absolutely love it. It's just a simple command and viola you are read
+This is something i just pulled out of reddit recently and would love to share it. Thanks to [u/77ilham77](https://reddit.com/u/77ilham77), there is a way to move windows without the title bar and I absolutely love it. It's just a simple command and viola you are read. This allows you to hold down `<C-CMD>` and lets u move the window with your mouse.
 
 ```bash
 defaults write -g NSWindowShouldDragOnGesture -bool true 
