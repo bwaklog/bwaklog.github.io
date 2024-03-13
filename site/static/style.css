@@ -84,7 +84,7 @@ footer {
 
     text-align: center;
 
-    border-top: 2px dashed var(--color-primary-dim);
+    border-top: 2px dotted var(--color-primary-dim);
     background-color: var(--color-background);
     color: var(--color-postcard-text);
 
@@ -111,7 +111,7 @@ nav {
     & > a {
         word-wrap: break-word;
     }
-    border-bottom: 2px dashed var(--color-primary);
+    border-bottom: 2px dotted var(--color-primary-dim);
 }
 
 a {
