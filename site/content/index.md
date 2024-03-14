@@ -7,7 +7,4 @@ previewimage: /static/me.jpeg
 
 ## Hej! I'm Aditya Hegde
 
-Welcome to my home on the internet!
-
-![waving bear](https://i.giphy.com/IThjAlJnD9WNO.webp)
-
+Welcome to my home on the internet! You can find my projects at [github/bwaklog](https://github.com/bwaklog)
