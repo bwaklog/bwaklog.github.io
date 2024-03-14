@@ -5,11 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {{if eq .Frontmatter.Type "post" }}
-    <title>{{$.Layout.Author}} | {{.Frontmatter.Title}}</title>
-    {{else}}
-    <title>{{.Frontmatter.Title}}</title>
-    {{end}}
+    <title>~/{{$.Layout.Author}}/{{.Frontmatter.Title}}</title>
 
 	 <link rel="preload stylesheet" href="/static/style.css">
 	 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
@@ -34,7 +30,7 @@
 
     <link rel="icon" type="image/x-icon" href="/static/favicon.png">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ .Frontmatter.Title }}">
+    <meta property="og:title" content="~/{{ $.Layout.Author }}/{{ .Frontmatter.Title }}">
     <meta property="og:description" content="{{ .Frontmatter.Description }}">
     <meta property="og:image" content="{{ .Frontmatter.PreviewImage }}">
 
