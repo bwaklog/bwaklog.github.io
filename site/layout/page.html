@@ -17,20 +17,6 @@
     </div>
 
     <script>
-        function lightScheme() {
-            document.documentElement.style.setProperty('--color-text', '##484848');
-            document.documentElement.style.setProperty('--color-background', '##f6f5ee');
-            document.documentElement.style.setProperty('--color-postcard-text', '#484848');
-
-            document.body.style.backgroundColor = "#f6f5ee";
-            document.body.style.backgroundImage = "none";
-        };
-
-        window.addEventListener("load", function() {
-            lightScheme();
-        });
-        lightScheme();
-
         hljs.highlightAll();
         hljs.addPlugin(new CopyButtonPlugin());
     </script>
