@@ -24,14 +24,15 @@
 
             document.body.style.backgroundColor = "#f6f5ee";
             document.body.style.backgroundImage = "none";
-        }
+        };
 
         window.addEventListener("load", function() {
             lightScheme();
-        }
+        });
+        lightScheme();
 
-            hljs.highlightAll();
-            hljs.addPlugin(new CopyButtonPlugin());
+        hljs.highlightAll();
+        hljs.addPlugin(new CopyButtonPlugin());
     </script>
 
     {{template "footer" .}}
