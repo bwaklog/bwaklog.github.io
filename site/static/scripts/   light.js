@@ -14,6 +14,10 @@ function lightScheme() {
     document.documentElement.style.setProperty('--color-text', '##484848');
     document.documentElement.style.setProperty('--color-background', '##f6f5ee');
     document.documentElement.style.setProperty('--color-postcard-text', '#484848');
+
+    // set body - background-color and background-image to none
+    document.body.style.backgroundColor = "#f6f5ee";
+    document.body.style.backgroundImage = "none";
 }
 
 window.addEventListener("load", function() {

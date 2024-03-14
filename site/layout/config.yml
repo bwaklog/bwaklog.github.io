@@ -5,5 +5,4 @@ navbar:
   - posts
 baseURL: https://hegde.live/
 plugins:
-  - light.js
 author: Aditya Hegde
