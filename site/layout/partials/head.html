@@ -5,7 +5,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{if eq .Frontmatter.Type "post" }}
+    <title>{{$.Layout.Author}} | {{.Frontmatter.Title}}</title>
+    {{else}}
     <title>{{.Frontmatter.Title}}</title>
+    {{end}}
 
 	 <link rel="preload stylesheet" href="/static/style.css">
 	 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
