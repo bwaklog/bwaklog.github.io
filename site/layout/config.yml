@@ -1,6 +1,7 @@
 navbar:
   - index
   - anna
+  - clicks
   - tags
   - posts
 baseURL: https://hegde.live/
