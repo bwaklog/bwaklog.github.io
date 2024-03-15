@@ -11,4 +11,3 @@ Welcome to my home on the internet! You can find my projects at [github/bwaklog]
 
 <br/>
 
-![waving bear](https://i.giphy.com/IThjAlJnD9WNO.webp)
