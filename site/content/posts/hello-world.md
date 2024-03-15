@@ -11,8 +11,6 @@ tags:
 
 # Hello World 🌊
 
-Aditya Hegde
-
 8th Dec 2023
 
 <br/>
@@ -34,7 +32,5 @@ I love learning new stuff. And at the same time, I don't know what to focus on. 
 <br />
 
 Regards
-
-<br />
 
 *Aditya Hegde*

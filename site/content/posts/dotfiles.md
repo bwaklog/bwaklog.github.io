@@ -61,3 +61,7 @@ This is something i just pulled out of reddit recently and would love to share i
 ```bash
 defaults write -g NSWindowShouldDragOnGesture -bool true 
 ```
+
+<br/>
+
+*Aditya Hegde*
