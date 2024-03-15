@@ -1,5 +1,17 @@
 /* Creating named values cuz im stupid */
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #ffffff;
+        --color-background: #0d0d0a;
+        --color-primary: #FF4A6A;
+        --color-primary-dim: #FF4A6A7f;
+        --color-postcard-text: #b4befe5f;
+        --color-white-accent: #ffffff35;
+        --catppuccino-mocha-dark: #1e1e2d;
+    }
+}
+
 :root {
     --color-text: #ffffff;
     --color-background: #0d0d0a;
@@ -51,7 +63,7 @@ body {
     font-family: Montserrat, custom-font, agave, monospace;
     line-height: 1.6;
 
-    font-weight: 400;
+    font-weight: 500;
     background-color: var(--color-background);
     color: var(--color-text);
 
@@ -66,7 +78,7 @@ body {
     height: 100vh;
 
     margin: auto;
-    margin-inline: 25%;
+    margin-inline: 30%;
 
 }
 
@@ -154,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     margin-top: .5rem;
-    font-weight: 500;
+    font-weight: 650;
     margin-bottom: .5rem;
     text-align: left;
     word-break: break-word;
@@ -367,7 +379,7 @@ blockquote {
 	 margin-left: 0px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     body {
         margin-inline: 22%;
     }

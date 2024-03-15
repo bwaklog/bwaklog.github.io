@@ -21,13 +21,12 @@
     <link rel="alternate" type="application/atom+xml" title="feed" href="/feed.atom">
 
     {{range .Frontmatter.JSFiles}}
-    <script src="/script/{{.}}" defer></script>
+    <script src="/static/scripts/{{.}}" defer></script>
     {{end}}
 
     {{range .Layout.SiteScripts}}
-    <script src="/script/{{.}}" defer></script>
+    <script src="/static/scripts/{{.}}" defer></script>
     {{end}}
-
 
     <link rel="icon" type="image/x-icon" href="/static/favicon.png">
     <meta property="og:type" content="website">
