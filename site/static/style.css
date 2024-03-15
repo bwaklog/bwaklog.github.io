@@ -24,31 +24,9 @@
     }
 }
 
-
-@font-face {
-    font-family: custom-font;
-    src: url(./fonts/Inter/Inter-Regular.ttf);
-}
-
-@font-face {
-    font-family: agave;
-    src: url(./fonts/mono/Agave-Regular.ttf);
-}
-
-
 @font-face {
     font-family: Ioskeva;
     src: url(./fonts/mono/Ioskeva-Regular.ttf);
-}
-
-@font-face {
-    font-family: RobotoSlab;
-    src: url(./fonts/Roboto/RobotoSlab-Regular.ttf);
-}
-
-@font-face {
-    font-family: SourceSerif;
-    src: url(./fonts/SourceSerifPro/SourceSerifItalics_Regular.ttf);
 }
 
 @font-face {
@@ -63,7 +41,7 @@
 
 body {
 
-    font-family: Montserrat, custom-font, agave, monospace;
+    font-family: Montserrat, custom-font, monospace;
     line-height: 1.6;
 
     font-weight: 500;
@@ -196,7 +174,7 @@ a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, RobotoSlab;
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     margin-top: .5rem;
