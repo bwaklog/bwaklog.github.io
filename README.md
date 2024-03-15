@@ -5,14 +5,14 @@
 How it should look if you have your own layout templates:
 
 ```bash
-	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
-	@cp -r site/{content,static,layout} anna/site/
+@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
+@cp -r site/{content,static,layout} anna/site/
 ```
 
 If you are ready to use the default layout templates, make sure to remove `anna/site/layout/{...any of the templates}` from your Makefile. But ensure that you dont end up removing the `config.yml` file as that is different for each site. So your Makefile lines would be modified in such a manner.
 ```bash
-	@rm -rf anna/site/content/ anna/site/static/ 
-	@cp -r site/{content,static,layout} anna/site/
+@rm -rf anna/site/content/ anna/site/static/ 
+@cp -r site/{content,static,layout} anna/site/
 ```
 
 You finally need to end up with a directory structure looking somewhat like this
