@@ -210,7 +210,16 @@ img {
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border-radius: 9px;
+    border-radius: 4px;
+}
+
+iframe {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .all-tags, .tagged-posts {
