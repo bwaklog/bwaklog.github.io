@@ -1,6 +1,7 @@
 {{define "header"}}
 <header>
   <nav>
+    <div class="navigations">
     {{range .Layout.Navbar}}
     {{ if eq . "index" }}
     <a href="/">{{ $.Layout.Author }}</a>
@@ -8,6 +9,10 @@
     <a href="/{{.}}.html">{{.}}</a>
     {{end}}
     {{end}}
+    </div>
+    <span id="theme-toggle" class="material-symbols-rounded">
+        brightness_4
+    </span>
   </nav>
 </header>
 {{end}}

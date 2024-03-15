@@ -1,40 +1,20 @@
 function lightScheme() {
     // change the tags
-    /*
-        :root {
-            --color-text: #ffffff;
-            --color-background: #0d0d0a;
-            --color-primary: #FF4A6A;
-            --color-primary-dim: #FF4A6A7f;
-            --color-postcard-text: #b4befe5f;
-            --color-white-accent: #ffffff35;
-            --catppuccino-mocha-dark: #1e1e2d;
-        }
-    */
     document.documentElement.style.setProperty('--color-text', '#484848');
     document.documentElement.style.setProperty('--color-background', '#f6f5ee');
     document.documentElement.style.setProperty('--color-postcard-text', '#484848');
+    document.documentElement.style.setProperty('--catppuccino-crust', '#dce0e8');
 
     // set body - background-color and background-image to none
     document.body.style.backgroundColor = "#f6f5ee";
 }
 
 function darkScheme() {
-    /*
-        :root {
-            --color-text: #ffffff;
-            --color-background: #0d0d0a;
-            --color-primary: #FF4A6A;
-            --color-primary-dim: #FF4A6A7f;
-            --color-postcard-text: #b4befe5f;
-            --color-white-accent: #ffffff35;
-            --catppuccino-mocha-dark: #1e1e2d;
-        }
-     */
     document.documentElement.style.setProperty('--color-text', '#ffffff');
     document.documentElement.style.setProperty('--color-background', '#0d0d0a');
     document.documentElement.style.setProperty('--color-postcard-text', '#b4befe5f');
     document.documentElement.style.setProperty('--color-white-accent', '#ffffff35');
+    document.documentElement.style.setProperty('--catppuccino-crust', '#1e1e2d');
 
     /*
         background-color: #0d0d10;
@@ -44,26 +24,34 @@ function darkScheme() {
     document.body.style.backgroundColor = "#0d0d0a";
 }
 
-window.addEventListener("load", function() {
-    // check browser prefers-color-scheme
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // dark mode
+// store user toggle preference in local storage. Site must remember what theme was last used
+// and apply it when the user returns to the site.
+
+function ThemeSwitch() {
+    // on click of button with class toggle-theme, store theme in local and switch
+    var theme = localStorage.getItem('theme');
+    if (theme === 'light') {
+        localStorage.setItem('theme', 'dark');
         darkScheme();
-    }
-    else {
-        // light mode
+    } else {
+        localStorage.setItem('theme', 'light');
         lightScheme();
     }
-});
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (event.matches) {
-        // dark mode
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    window.onload = function() {
+        var toggle = document.getElementById('theme-toggle');
+        toggle.onclick = function() {
+            ThemeSwitch();
+        }
+    };
+    // check local storage for theme
+    var theme = localStorage.getItem('theme');
+    if (theme === 'light') {
+        lightScheme();
+    } else {
         darkScheme();
     }
-    else {
-        // light mode
-        lightScheme();
-    }
 });
-

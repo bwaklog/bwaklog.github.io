@@ -17,7 +17,7 @@ Aditya Hegde
 
 <br/>
 
-I'm not usually great at these things (*writing blogs*), but I want to give it a try. So here it goes.
+I'm not usually great at these things, but I want to give it a try. So here it goes.
 
 Hey There! My name is Aditya Hegde and this is my small space on such a vast land of the web. What about me? Well, I'm a [freshman](https://www.urbandictionary.com/define.php?term=College%20Freshman) at PES University. Parts of some cool clubs such as [HSP](https://homebrew.hsp-ec.xyz/) and [ACM](https://acmpesuecc.github.io/) which was my first little family here in college. Besides the stressful parts of it, just the first 6 months alone have shown me a whole new world.
 
