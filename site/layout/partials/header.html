@@ -2,17 +2,19 @@
 <header>
   <nav>
     <div class="navigations">
-    {{range .Layout.Navbar}}
-    {{ if eq . "index" }}
-    <a href="/">{{ $.Layout.Author }}</a>
-    {{else}}
-    <a href="/{{.}}.html">{{.}}</a>
-    {{end}}
-    {{end}}
+      {{range .Layout.Navbar}}
+      {{ if eq . "index" }}
+      <a href="/">{{ $.Layout.Author }}</a>
+      {{else}}
+      <a href="/{{.}}.html">{{.}}</a>
+      {{end}}
+      {{end}}
     </div>
-    <span id="theme-toggle" class="material-symbols-rounded">
+    <div class="theme-toggle-div">
+      <span id="theme-toggle" class="material-symbols-rounded">
         brightness_4
-    </span>
+      </span>
+    </div>
   </nav>
 </header>
 {{end}}
