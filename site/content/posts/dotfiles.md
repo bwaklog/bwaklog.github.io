@@ -27,10 +27,10 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 
 ## My Most Used terminal tools
 
-- *Text Editor*: [nsim](https://neovim.io/) as my primary config with [packer](https://github.com/wbthomason/packer.nvim)
+- **Text Editor**: [nsim](https://neovim.io/) as my primary config with [packer](https://github.com/wbthomason/packer.nvim)
     - honorable mention to [zed](https://zed.dev/), which has been amazing
-- *Shell*: [zsh](https://en.wikipedia.org/wiki/Z_shell) Z-Shell as my default shell with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- *WM*: [Amethyst](https://github.com/ianyh/Amethyst) as my Window Manager
+- **Shell**: [zsh](https://en.wikipedia.org/wiki/Z_shell) Z-Shell as my default shell with [oh-my-zsh](https://ohmyz.sh/) and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- **WM**: [Amethyst](https://github.com/ianyh/Amethyst) as my Window Manager
 - [tmux](https://github.com/tmux/tmux/wiki) as my Terminal Multiplexer
 - [kitty](https://sw.kovidgoyal.net/kitty/) and when thats buggy, [iterm2](https://iterm2.com/)
 
