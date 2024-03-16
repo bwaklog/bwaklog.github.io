@@ -1,7 +1,7 @@
 ---
 date: 2023-12-09
 title: Xkcd Grab Presentation
-draft: true
+draft: false
 type: post
 description: My presentation in the 2023 HSP Project Expo. xkcd-grab demonstration, fuzzy searchinig, web scraping and more.
 tags:
@@ -27,3 +27,8 @@ The CLI itself is a minimal working tool I wrote with python. Besides using the 
 ![whatsapp chats](https://i.imgur.com/Gzhcsps.jpg)
 
 Well, the cli tool couldn't do that _initially_. This is when decided to implement some cool way you can interact with the cli, and find the comic right from your terminal.
+
+<br/>
+...to be continued
+
+*Aditya Hegde*

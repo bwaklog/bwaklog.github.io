@@ -28,7 +28,6 @@ Every second part of your effort on something counts, it makes a difference. For
 
 ![xkcd comic 1658 - estimating time](https://imgs.xkcd.com/comics/estimating_time_2x.png)
 
-<br/>
 
 ## Navigating perspectives 
 

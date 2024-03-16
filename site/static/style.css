@@ -48,10 +48,6 @@
 	src: url(./fonts/sign/southam/Southam.otf);
 }
 
-* {
-    transition: background-color 200ms ease-in-out;
-    /* background-color: var(--color-background); */
-}
 
 body {
 
@@ -268,13 +264,13 @@ h4 {font-size: 1.3rem;}
 
 
 img {
-    width: 70%;
+    width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border-radius: 9px;
+    border-radius: 5px;
     overflow: hidden;
     object-fit: cover;
     object-position: center center;
@@ -282,10 +278,10 @@ img {
     transition: 150ms;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
     &:active {
-        transform: scale(1.02); 
+        transform: scale(1.01); 
     }
 }
 
@@ -422,7 +418,11 @@ pre code {
 }
 
 pre code.hljs {
-    background: #1e1e2d;
+    background-color: #1e1e2d!important;
+}
+
+.hljs-copy-button {
+    background-color: black;
 }
 
 p > code,
