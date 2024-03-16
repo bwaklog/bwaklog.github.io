@@ -38,10 +38,6 @@
     src: url(./fonts/VictorMono/victormono_italics.ttf);
 }
 
-@font-face {
-    font-family: Montserrat;
-    src: url(./fonts/Montserrat/Montserrat.ttf);
-}
 
 @font-face {
 	font-family: southam;
@@ -61,7 +57,7 @@
 
 body {
 
-    font-family: WorkSans, Montserrat, monospace;
+    font-family: WorkSans, sans-serif;
     line-height: 1.6;
 
     font-weight: 350;
@@ -194,7 +190,7 @@ a::before {
     transform: scaleX(0);
     transition: transform 0.5s ease;
 }
-  
+
 
 a:hover::before {
   transform: scaleX(1);
@@ -219,7 +215,7 @@ a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not( .
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: BebasNeue, Montserrat;
+    font-family: BebasNeue;
     margin: 0;
     padding: 0;
     margin-top: .5rem;
@@ -256,8 +252,8 @@ h4 {font-size: 1.7rem;}
         margin: 0;
         padding: 0;
     }
-    
-    & > p, 
+
+    & > p,
     & > a,
     & > ul > li,
     & > ol > li,
@@ -265,7 +261,7 @@ h4 {font-size: 1.7rem;}
     & > ol > li > a {
         font-size: 1rem;
     }
-/* 
+/*
     & > ul > li,
     & > ol > li {
         margin-left: -2rem;
@@ -306,7 +302,7 @@ img {
         transform: scale(1.02);
     }
     &:active {
-        transform: scale(1.02); 
+        transform: scale(1.02);
     }
 }
 
@@ -321,7 +317,7 @@ iframe {
 
 details > summary {
     font-size: 1.5rem;
-    font-family: BebasNeue, Montserrat;
+    font-family: BebasNeue;
 }
 
 summary::marker {
@@ -337,14 +333,14 @@ details > img {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    
+
     & > a {
         font-size: 1.1rem;
         padding: .5rem;
         margin: .3rem;
 
     }
-    
+
 }
 
 .tag-placeholder {
@@ -554,7 +550,7 @@ blockquote {
     margin-top: 2rem;
     margin-bottom: 2rem;
     }
-    
+
 
     .body {
         & > a,
@@ -576,7 +572,7 @@ blockquote {
         & > p,
         & > .post-card-div > p {
             font-size: .9rem;
-        } 
+        }
 
         & > h3 {
             font-size: 1.5rem;
@@ -592,5 +588,3 @@ blockquote {
         height: auto;
     }
 }
-
-
