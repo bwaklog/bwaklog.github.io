@@ -1,6 +1,5 @@
 function lightScheme() {
     // change the tags
-    document.body.style.backgroundColor = "#ffffff";
     document.documentElement.style.setProperty('--color-text', '#000000');
     document.documentElement.style.setProperty('--color-text-dim', '#0000007a');
     document.documentElement.style.setProperty('--color-background', '#ffffff');
@@ -13,7 +12,6 @@ function lightScheme() {
 }
 
 function darkScheme() {
-    document.body.style.backgroundColor = "#ffffff";
     document.documentElement.style.setProperty('--color-text', '#ffffff');
     document.documentElement.style.setProperty('--color-text-dim', '#ffffff7a');
     document.documentElement.style.setProperty('--color-background', '#000000');

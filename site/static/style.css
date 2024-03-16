@@ -50,7 +50,7 @@
 
 * {
     transition: background-color 200ms ease-in-out;
-    background-color: var(--color-background);
+    /* background-color: var(--color-background); */
 }
 
 body {
