@@ -272,7 +272,6 @@ h4 {font-size: 1.7rem;}
 
 }
 
-
 img {
     width: 100%;
     display: block;
@@ -472,7 +471,7 @@ blockquote {
     }
 
     img {
-        width: 90%;
+        width: 100%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -488,7 +487,7 @@ blockquote {
     }
 
     img {
-        width: 90%;
+        width: 100%;
         height: auto;
         display: block;
         margin-left: auto;
@@ -516,7 +515,7 @@ blockquote {
     img {
             /* height: 35rem;
     width: auto; */
-    width: 90%;
+    width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
