@@ -186,7 +186,7 @@ a {
     position: relative;
 }
 
-a::before:not(.clicks) {
+a::before {
     content: "";
     position: absolute;
     display: block;
@@ -200,10 +200,10 @@ a::before:not(.clicks) {
 }
   
 
-a:hover::before:not(.clicks) {
+a:hover::before {
   transform: scaleX(1);
 }
-a:active::before:not(.clicks) {
+a:active::before {
   transform: scaleX(1);
 }
 
