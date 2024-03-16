@@ -26,7 +26,7 @@ A few thoughts off of my mind, my perspective on effort. It's something I'm a bi
 Every second part of your effort on something counts, it makes a difference. For me, the end result must showcase that effort. You can't spend hours together working on something, only for the end result to be garbage. If it doesn't go in hand with the effort that pooled in.
 
 
-![xkcd comic 1658 - estimating time](https://imgs.xkcd.com/comics/estimating_time_2x.png)
+<!-- ![xkcd comic 1658 - estimating time](https://imgs.xkcd.com/comics/estimating_time_2x.png) -->
 
 
 ## Navigating perspectives 

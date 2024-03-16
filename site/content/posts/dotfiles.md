@@ -7,6 +7,7 @@ description: Here are some things I cant live without
 previewimage: https://i.imgur.com/TR4Dkq4.jpg 
 tags:
     - blog
+    - tech
 ---
 
 # Workflow
@@ -15,11 +16,7 @@ Aditya Hegde
 
 8th Mar 2024
 
-(**Updated**) 9th Mar 2024
-
 <br/>
-
-![xkcd 1168 tar](https://imgs.xkcd.com/comics/tar_2x.png)
 
 I've never had my self working on solely the terminal before. It would be only a few occasions when the GUI alternative was simply frustrating to use. I've since forced myself to try and venture more, and now I simply can't work without them. I have even lost count for the number of times i've used vim motions accidentally.
 
@@ -36,7 +33,7 @@ At first, yes these things were a bit intriguing, but once u leave the learning 
 - [kitty](https://sw.kovidgoyal.net/kitty/) and when thats buggy, [iterm2](https://iterm2.com/)
 
 
-![Imgur](https://i.imgur.com/TR4Dkq4.jpg)
+<!-- ![Imgur](https://i.imgur.com/TR4Dkq4.jpg) -->
 
 ## Extras
 
@@ -45,6 +42,10 @@ This is something i just pulled out of reddit recently and would love to share i
 ```bash
 defaults write -g NSWindowShouldDragOnGesture -bool true 
 ```
+
+![xkcd 1168 tar](https://imgs.xkcd.com/comics/tar_2x.png)
+<!-- add centered aligned small text about comic number -->
+<p align="center" style="transform: translateY(-1.5rem); opacity: 0.8;">xkcd 1168 - tar</p>
 
 <br/>
 

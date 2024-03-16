@@ -91,7 +91,7 @@ footer {
     width: 100%;
     flex: 0;
 
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 300;
     align-self: center;
     padding: 1rem 0;
@@ -113,7 +113,7 @@ footer {
 /* all italics fonts to victormonoitalics */
 i, em {
     font-family: southam;
-    font-size: 2.2rem;
+    font-size: 3.2rem;
 }
 b {
     font-weight: 500;
@@ -269,6 +269,11 @@ h4 {font-size: 1.7rem;}
     & > ol > li > a {
         font-size: 1rem;
     }
+/* 
+    & > ul > li,
+    & > ol > li {
+        margin-left: -2rem;
+    } */
 
 }
 
@@ -428,7 +433,11 @@ pre code {
 }
 
 pre code.hljs {
-    background-color: #1e1e2d!important;
+    /* background-color: #151525!important; */
+    line-height: 1.3rem;
+    /*use ligatures*/
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga" on;
 }
 
 .hljs-copy-button {
@@ -440,9 +449,9 @@ li > code,
 dd>code,
 td>code {
     font-family: Ioskeva, monospace;
-    background: var(--catppuccino-crust);
+    /* background: var(--catppuccino-crust); */
     color: var(--color-primary);
-    border: 1.5px solid var(--color-white-accent);
+    border: 1.5px solid var(--color-text-dim);
     border-radius: 5px;
     word-wrap: break-word;
     font-size: inherit;

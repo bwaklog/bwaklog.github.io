@@ -10,6 +10,7 @@ tags:
     - talks
     - cli
     - blog
+    - tech
 ---
 
 # XKCD Cli, Fuzzy Matching and Web Scraping
