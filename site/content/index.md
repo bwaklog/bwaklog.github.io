@@ -9,5 +9,5 @@ previewimage: /static/me.jpeg
 
 Welcome to my home on the internet! You can find my projects at [github/bwaklog](https://github.com/bwaklog)
 
-<br/>
+![pic of me](../static/me.jpeg)
 
