@@ -186,7 +186,7 @@ a {
     position: relative;
 }
 
-a::before {
+a::before:not(.clicks) {
     content: "";
     position: absolute;
     display: block;
@@ -200,10 +200,10 @@ a::before {
 }
   
 
-a:hover::before {
+a:hover::before:not(.clicks) {
   transform: scaleX(1);
 }
-a:active::before {
+a:active::before:not(.clicks) {
   transform: scaleX(1);
 }
 
@@ -306,6 +306,19 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+details > summary {
+    font-size: 1.5rem;
+    font-family: BebasNeue, Montserrat;
+}
+
+summary::marker {
+    color: var(--color-primary)
+}
+
+details > img {
+    width: 70%;
 }
 
 .all-tags, .tagged-posts {
