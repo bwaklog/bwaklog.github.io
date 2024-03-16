@@ -136,28 +136,24 @@ b {
 }
 
 #theme-toggle {
+    width: 24px;
+    height: 24px;
     cursor: pointer;
+    margin: 0;
+    /* this is an id to a svg with path. Change the colour */
+    fill: var(--color-text);
     /*disable text selection*/
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
 }
 
-.material-symbols-rounded {
-    width: 50px!important;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
-}
 
 .theme-toggle-div {
-    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 24px;
 }
 
 .theme-toggle {
@@ -277,7 +273,22 @@ h4 {font-size: 1.7rem;}
 
 }
 
+/* CSS animation, make all images jump up by scale for a second when page is loaded */
+@keyframes jump {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 img {
+    animation: jump 1s;
+
     width: 100%;
     display: block;
     margin-left: auto;
@@ -292,10 +303,10 @@ img {
     transition: 150ms;
 
     &:hover {
-        transform: scale(1.01);
+        transform: scale(1.02);
     }
     &:active {
-        transform: scale(1.01); 
+        transform: scale(1.02); 
     }
 }
 
@@ -447,14 +458,12 @@ pre code {
 
 pre code.hljs {
     /* background-color: #151525!important; */
-    line-height: 1.3rem;
+    /* line-height: 1.4rem; */
     /*use ligatures*/
     font-variant-ligatures: common-ligatures;
     font-feature-settings: "liga" on;
-}
-
-.hljs-copy-button {
-    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 p > code,
