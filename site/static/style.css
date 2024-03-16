@@ -48,10 +48,20 @@
 	src: url(./fonts/sign/southam/Southam.otf);
 }
 
+@font-face {
+    font-family: WorkSans;
+    src: url(./fonts/WorkSans.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(./fonts/BebasNeue.ttf);
+}
+
 
 body {
 
-    font-family: Ambit, Montserrat, monospace;
+    font-family: WorkSans, Montserrat, monospace;
     line-height: 1.6;
 
     font-weight: 350;
@@ -81,14 +91,14 @@ footer {
     width: 100%;
     flex: 0;
 
-    font-size: .9rem;
+    font-size: .7rem;
     font-weight: 300;
     align-self: center;
     padding: 1rem 0;
 
     text-align: center;
 
-    border-top: 2px dashed var(--color-primary);
+    border-top: 2px solid var(--color-primary-dim);
     background-color: var(--color-background);
     /* color: var(--color-postcard-text); */
     color: var(--color-text-dim);
@@ -103,7 +113,7 @@ footer {
 /* all italics fonts to victormonoitalics */
 i, em {
     font-family: southam;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 b {
     font-weight: 500;
@@ -216,20 +226,21 @@ a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not( .
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Ambit, Montserrat;
+    font-family: BebasNeue, Montserrat;
     margin: 0;
     padding: 0;
     margin-top: .5rem;
     font-weight: 500;
     margin-bottom: .5rem;
+    /*text spacing*/
     text-align: left;
     word-break: break-word;
 }
 
-h1 { font-size: 2.0rem;}
-h2 { font-size: 1.7rem;}
-h3 { font-size: 1.5rem;}
-h4 {font-size: 1.3rem;}
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2.0rem;}
+h3 { font-size: 1.9rem;}
+h4 {font-size: 1.7rem;}
 
 .body {
     padding: 1rem;
@@ -257,14 +268,14 @@ h4 {font-size: 1.3rem;}
     & > ol > li,
     & > ul > li > a,
     & > ol > li > a {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
 }
 
 
 img {
-    width: 75%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -377,7 +388,7 @@ iframe {
 
 .post-card.description {
     & > h3 {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
         margin: 0;
         color: var(--color-text);
         /* color: var(--color-text-dim); */
@@ -537,7 +548,7 @@ blockquote {
         } 
 
         & > h3 {
-            font-size: 1.1rem;
+            font-size: 1.5rem;
         }
     }
 
