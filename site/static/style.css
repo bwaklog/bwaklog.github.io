@@ -79,6 +79,16 @@ body {
 
 }
 
+::selection {
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+::-moz-selection {
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
 header {
     flex: 0;
 }
