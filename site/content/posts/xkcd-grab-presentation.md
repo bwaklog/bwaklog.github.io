@@ -36,6 +36,26 @@ The CLI itself is a minimal working tool I wrote with python. Besides using the 
 Well, the cli tool couldn't do that initially. This is when decided to implement some cool way you can interact with the cli, and find the comic right from your terminal.
 
 <br/>
+
+## Fuzzy finding with levenshtine distance
+
+Once i've got my hands on all the data needed, now was the time that I find a way to give the user the queried comic. My goal was to retrieve a comic based on a string, probably a mini description and use vector searching to find the most relevant comic. Seems good on paper, problem was the data. The api didn't provide any sort of description for over 1000+ comics. And with the limited time of 3 days, along with hours of college work, this approach wasnt feasible. The only way I could scrape out data would be using and OCR. The images of these comics have far better insignt about whats happening thatn the description...mostly because there was nothing available. I will bring this up in a bit while talking about the little easter egg feature.
+
+<br/>
+
+Now the only other option would be to use the titles of the comic. What the task was now is to achieve the best string approximation and provide the user with the 10 best matches. Levenshtein distance out of all the options was the simplest to implement given the time. Thing is I couldn't get this to work with an implementation that I craeted from defnition of the method to determine the levenshtine ratio. While getting the distance was a simple formula. Finding the ratio of kept me stuck for a while. It worked just fine, but the results didn't seem to align with premade modules that are supposed to do the same thing. While my results for the ratio were somewhat right, they were off by around 0.2 to 0.3. Turns out, the way fuzzywuzzy calculates the ratio is by using a slightly modified version of this formula. 
+
+<br/>
+
+By definition, if `l` is the Levenshtein distance, and `m` is the length of the longest of the two words, the ratio is given by `1-(l/m)`. However in the modified version, the sum of the lengths of the words were used for getting the value.  
+
+```python
+def Levi_ratio(a: str, b: str) -> int:
+    d = levi_distance(a, b)
+    l = len(a) + len(b)
+    return 1 - (d/l)
+```
+
 ...to be continued
 
 *Aditya Hegde*
