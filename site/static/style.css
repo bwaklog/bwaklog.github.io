@@ -71,7 +71,7 @@ body {
     height:95vh;
 
     margin: auto;
-    margin-inline: 31%;
+    margin-inline: 28%;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
 
@@ -279,22 +279,7 @@ h4 {font-size: 1.7rem;}
 
 }
 
-/* CSS animation, make all images jump up by scale for a second when page is loaded */
-@keyframes jump {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 img {
-    animation: jump 1s;
-
     width: 100%;
     display: block;
     margin-left: auto;
@@ -306,13 +291,20 @@ img {
     object-fit: cover;
     object-position: center center;
 
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
     transition: 150ms;
 
     &:hover {
-        transform: scale(1.02);
+        /* transform: scale(1.02); */
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
     }
     &:active {
-        transform: scale(1.02);
+        /* transform: scale(1.02); */
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
     }
 }
 
@@ -475,7 +467,11 @@ pre code.hljs {
 p > code,
 li > code,
 dd>code,
-td>code {
+td>code
+h1 > code,
+h2 > code,
+h3 > code,
+h4 > code {
     font-family: Ioskeva, monospace;
     /* background: var(--catppuccino-crust); */
     color: var(--color-primary);
@@ -504,7 +500,7 @@ blockquote {
 
 @media (max-width: 1200px) {
     body {
-        margin-inline: 25%;
+        margin-inline: 20%;
     }
 
     img {

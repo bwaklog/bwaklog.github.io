@@ -18,6 +18,16 @@ host:
 	@echo "\nMoving rendered site to /rendered\n"
 	@cp -r anna/site/rendered ./rendered
 
+host_build:
+	@echo "\nBuilding site and getting rendered directory to an accessable point...\n"
+	@cd anna; go build; ./anna
+	@echo "\nMoving rendered site to /rendered\n"
+	@cp -r anna/site/rendered ./rendered
+
+host_clean:
+	@echo "\nCleaning up the rendered directory...\n"
+	@rm -rf rendered
+
 update:
 	# check if branch is uptodate with origin
 	@echo "\nChecking if branch is up-to-date with origin..."
