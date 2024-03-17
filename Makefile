@@ -10,6 +10,14 @@ fresh:
 	@echo "\nUse 'make serve' to build and serve site\n(Change flags in your make file if needed)"
 	@echo "\nNow use anna wisely you must.\nAnna is ready to go 🍚\n"
 
+host:
+	@echo "\nCloning latest from git and getting stuff ready..\n"
+	@make fresh	
+	@echo "\nBuilding site and getting rendered directory to an accessable point...\n"
+	@cd anna; go build; ./anna
+	@echo "\nMoving rendered site to /rendered\n"
+	@cp -r anna/site/rendered ./rendered
+
 update:
 	# check if branch is uptodate with origin
 	@echo "\nChecking if branch is up-to-date with origin..."
