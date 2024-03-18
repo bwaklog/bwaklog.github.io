@@ -160,6 +160,18 @@ b {
     justify-content: center;
     align-items: center;
     width: 24px;
+    margin-left: 1rem;
+}
+
+.footer-image {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    user-select: none;
+    display:inline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    transform: rotate(20deg);
 }
 
 .theme-toggle {
