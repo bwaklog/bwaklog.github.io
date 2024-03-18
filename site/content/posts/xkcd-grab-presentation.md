@@ -56,6 +56,55 @@ def Levi_ratio(a: str, b: str) -> int:
     return 1 - (d/l)
 ```
 
-...to be continued
+This was something that I found out hours before the final presentation. So I had to go ahead with using the prebuilt module, which im not so proud. The results were good but not fully upto my expectation.
+
+## Problems encountered
+
+This project would have been a smooth sail if it werent for the big obstacle that I encountered where the data was simply insufficient. As a solution to this, I created a simple web scraper that works neatly along with the pre existing system that I made for the fuzzy finder. Instead of iteracting with the xkcd api, a neat google search querry along with some web scrappign gave some of the best output...I mean what else would I expect. Each xkcd url is in the following format.
+
+```text
+https://xkcd.com/<some number>/
+```
+
+Here is the basic structure of a `Comic` class.
+
+```python
+class Comic:
+    self.num        # comic number
+    self.url        # comci url (not the api endpoint)
+    self.title      # comic title
+    self.trans      # comic transcript (missing for over 1000+ comics)
+    self.alt        # comic alt text
+    self.img        # comic image url
+    self.content    # comic content
+```
+
+The `content` is stripped out from the images using googles tessaract OCR engine, which has been made available to python.
+
+How this app works is it dumps all the data locally in a csv for quick access in effort to use the api as less as possible. Ofcourse there a ton of comics that need to be retrived. In addition to the api call, running a sequential task of using an OCR to get the data from the comics is way too time consuming, especially when you are handling with anything over 1000s in number. Hence there was a need for a simple parallelisation operation
+
+```python
+def get_session():
+    if not hasattr(thread_local, "session"):
+        thread_local.session = requests.Session()
+    return thread_local.session
+
+# Returns a list of data in the same order as the csv file
+def get_comic_data(comic_num):
+    comic_data = Comic(num=comic_num) # this neatly give me a Comic object that i can handle
+    # ...
+    print(f"Data for comic {comic_num} fetched sucessfully")
+    comic_data_nlist.append(data)
+
+
+# Threading function to get all comcis
+def fetch_all_comics(nums_list):
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+        executor.map(get_comic_data, nums_list)
+
+    print("++++++ APPENDING & UPDATING COMICS +++++++")
+```
+
+What was supposed to be a 2 hour job of sequentially handling all the tasks got reduced down to 5 minues (5 minutes and 23 seconds to be exact :P). This function is automaically called when any operation is called for using the CLI tool. Hence making data available for latest queries as well as for the fuzzy finder. 
 
 *Aditya Hegde*
