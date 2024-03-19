@@ -2,11 +2,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #FF4A6A;
-        --color-primary-dim: #FF4A6A7f;
-		--color-text: #ffffff;
+        --color-primary: #ff4a6a;
+        --color-primary-dim: #ff4a6a7f;
+        --color-text: #ffffff;
         --color-text-dim: #ffffff7f;
-		--color-background: #0e2a35;
+        --color-background: #0e2a35;
         --color-postcard-text: #b4befe5f;
         --color-white-accent: #ffffff35;
         --catppuccino-crust: #1e1e2d;
@@ -15,11 +15,11 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-primary: #FF4A6A;
-        --color-primary-dim: #FF4A6A7f;
-		--color-text: #000000;
+        --color-primary: #ff4a6a;
+        --color-primary-dim: #ff4a6a7f;
+        --color-text: #000000;
         --color-text-dim: #000000;
-		--color-background: #ffffff;
+        --color-background: #ffffff;
         --color-primary: white;
         --color-primary-dim: white;
         --color-postcard-text: #484848;
@@ -38,10 +38,9 @@
     src: url(./fonts/VictorMono/victormono_italics.ttf);
 }
 
-
 @font-face {
-	font-family: southam;
-	src: url(./fonts/sign/southam/Southam.otf);
+    font-family: southam;
+    src: url(./fonts/sign/southam/Southam.otf);
 }
 
 @font-face {
@@ -54,9 +53,7 @@
     src: url(./fonts/BebasNeue.ttf);
 }
 
-
 body {
-
     font-family: WorkSans, sans-serif;
     line-height: 1.6;
 
@@ -68,7 +65,7 @@ body {
     flex-direction: column;
     text-align: left;
     max-height: 100vh;
-    height:95vh;
+    height: 95vh;
 
     margin: auto;
     margin-inline: 28%;
@@ -76,7 +73,6 @@ body {
     margin-bottom: 1.2rem;
 
     transition: margin 0.3s ease-in-out;
-
 }
 
 ::selection {
@@ -97,7 +93,7 @@ footer {
     width: 100%;
     flex: 0;
 
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 300;
     align-self: center;
     padding: 1rem 0;
@@ -109,15 +105,14 @@ footer {
     /* color: var(--color-postcard-text); */
     color: var(--color-text-dim);
 
-
     & > span {
         color: var(--color-primary-dim);
-
     }
 }
 
 /* all italics fonts to victormonoitalics */
-i, em {
+i,
+em {
     font-family: southam;
     font-size: 3.2rem;
 }
@@ -143,8 +138,12 @@ b {
 
 /*on click of theme toggle, spin the image 5 times*/
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(180deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 #theme-toggle {
@@ -162,7 +161,6 @@ b {
     /*once clicked spin for 5 turns*/
 }
 
-
 .theme-toggle-div {
     display: flex;
     justify-content: center;
@@ -176,7 +174,7 @@ b {
     height: 15px;
     margin: 0;
     user-select: none;
-    display:inline;
+    display: inline;
     -webkit-user-select: none;
     -moz-user-select: none;
     transform: rotate(20deg);
@@ -199,7 +197,6 @@ nav {
     flex-direction: row;
 
     border-bottom: 1px solid var(--color-text-dim);
-
 }
 
 a {
@@ -218,19 +215,15 @@ a::before {
     left: 0;
     background-color: var(--color-primary);
     transform: scaleX(0);
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
 }
-
 
 a:hover::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 a:active::before {
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
-
-
-
 
 /* Thank you, @kepano!
 a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not( .reversefootnote ):not(.post-card) {
@@ -243,31 +236,43 @@ a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not( .
 }
 */
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: BebasNeue;
     margin: 0;
     padding: 0;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-weight: 500;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     /*text spacing*/
     text-align: left;
     word-break: break-word;
 }
 
-h1 { font-size: 2.5rem;}
-h2 { font-size: 2.0rem;}
-h3 { font-size: 1.9rem;}
-h4 {font-size: 1.7rem;}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.9rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
 
 .body {
     /* padding: 1rem; */
     background-color: var(--color-background);
 
     flex: 1 0 auto;
-    margin-top: .5rem;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
+    margin-top: 0.5rem;
 
     & > a,
     & > ul > li > a,
@@ -291,16 +296,15 @@ h4 {font-size: 1.7rem;}
     & > ol > li > a {
         font-size: 1.1rem;
     }
-/*
+    /*
     & > ul > li,
     & > ol > li {
         margin-left: -2rem;
     } */
-
 }
 
 img:not(.theme-toggle) {
-    box-shadow: 0 0 16px #000000;
+    box-shadow: 0 0 0px #000000;
 }
 
 img {
@@ -347,14 +351,15 @@ details > summary {
 }
 
 summary::marker {
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 details > img {
     width: 70%;
 }
 
-.all-tags, .tagged-posts {
+.all-tags,
+.tagged-posts {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -362,11 +367,9 @@ details > img {
 
     & > a {
         font-size: 1.1rem;
-        padding: .5rem;
-        margin: .3rem;
-
+        padding: 0.5rem;
+        margin: 0.3rem;
     }
-
 }
 
 .tag-placeholder {
@@ -402,21 +405,19 @@ details > img {
 
     & > a {
         border-radius: 5px;
-        margin: .5rem;
+        margin: 0.5rem;
         word-wrap: break-word;
         text-decoration: none;
 
-        transition: background-color 150ms ease-in-out,
-                    box-shadow 150ms ease-in-out;
-
-
+        transition:
+            background-color 150ms ease-in-out,
+            box-shadow 150ms ease-in-out;
     }
 
     & > a:hover {
         /*box-shadow: inset 0 0 20px var(--color-text);*/
         background-color: var(--color-background);
     }
-
 }
 
 .post-card {
@@ -426,10 +427,10 @@ details > img {
 .post-card-div {
     display: grid;
 
-    padding-top: .4rem;
-    padding-bottom: .4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
 
-    & > *  {
+    & > * {
         padding-inline: 1rem;
         /* color: var(--color-postcard-text); */
         color: var(--color-text-dim);
@@ -439,7 +440,7 @@ details > img {
         margin: 0;
         padding: 0;
         padding-inline: 1rem;
-        font-size: .9rem;
+        font-size: 0.9rem;
         font-weight: 300;
     }
 }
@@ -452,7 +453,7 @@ details > img {
         /* color: var(--color-text-dim); */
     }
     & > p {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -477,13 +478,12 @@ details > img {
     width: auto\9; /* ie8 */
 }
 
-
 pre code {
     font-family: Ioskeva, monospace;
     background: white;
     overflow-x: scroll;
     scrollbar-width: none;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 pre code.hljs {
@@ -498,26 +498,24 @@ pre code.hljs {
 
 p > code,
 li > code,
-dd>code,
-td>code
-h1 > code,
+dd > code,
+td > code h1 > code,
 h2 > code,
 h3 > code,
 h4 > code {
     font-family: Ioskeva, monospace;
-    background: #11111a;
-    color: var(--color-text);
+    border: 1px dotted var(--color-text);
+    color: var(--color-primary);
     box-shadow: inset 0 0 4px #ffffff45;
     border-radius: 5px;
     word-wrap: break-word;
     font-size: inherit;
     box-decoration-break: clone;
-    padding-inline: .4rem;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
-    border-radius: .2rem;
+    padding-inline: 0.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 0.2rem;
 }
-
 
 blockquote {
     margin-top: 2rem;
@@ -529,7 +527,7 @@ blockquote {
     }
 
     border-left: 3px solid var(--color-primary);
-	margin-left: 0px;
+    margin-left: 0px;
 }
 
 @media (max-width: 1200px) {
@@ -564,7 +562,6 @@ blockquote {
     }
 }
 
-
 /* styling for viewports width < 600px */
 @media (max-width: 650px) {
     .navigations {
@@ -576,42 +573,50 @@ blockquote {
     }
 
     footer {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     img {
-            /* height: 35rem;
+        /* height: 35rem;
     width: auto; */
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
-
 
     .body {
         & > a,
-        & > p, & > ul > li,
+        & > p,
+        & > ul > li,
         & > ol > li,
         & > ul > li > a,
         & > ol > li > a {
             font-size: 1.1rem;
         }
 
-        & > h1 { font-size: 2.0rem;}
-        & > h2 { font-size: 1.7rem;}
-        & > h3 { font-size: 1.5rem;}
-        & > h4 {font-size: 1.1rem;}
+        & > h1 {
+            font-size: 2rem;
+        }
+        & > h2 {
+            font-size: 1.7rem;
+        }
+        & > h3 {
+            font-size: 1.5rem;
+        }
+        & > h4 {
+            font-size: 1.1rem;
+        }
     }
 
     .post-card,
     .post-card.description {
         & > p,
         & > .post-card-div > p {
-            font-size: .9rem;
+            font-size: 0.9rem;
         }
 
         & > h3 {
