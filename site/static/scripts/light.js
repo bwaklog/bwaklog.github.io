@@ -28,14 +28,6 @@ function darkScheme() {
 function ThemeSwitch() {
     // on click of button with class toggle-theme, store theme in local and switch
     var theme = localStorage.getItem('theme');
-
-    // spin the toggle image 5 times
-    var toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', function() {
-        // invert the image
-        toggle.classList.toggle('invert');
-    });
-
     if (theme === 'light') {
         localStorage.setItem('theme', 'dark');
         darkScheme();
@@ -48,13 +40,19 @@ function ThemeSwitch() {
 
 document.addEventListener('DOMContentLoaded', () => {
     window.onload = function() {
-        var toggle = document.getElementById('theme-toggle');
+        const toggle = document.getElementById('theme-toggle');
         toggle.onclick = function() {
+            toggle.style.transition = 'transform 1s ease-in-out';
+            if (toggle.style.transform === 'rotate(3600deg)') {
+                toggle.style.transform = 'rotate(0deg)';
+            } else {
+                toggle.style.transform = 'rotate(3600deg)';
+            }
             ThemeSwitch();
         }
     };
     // check local storage for theme
-    var theme = localStorage.getItem('theme');
+    const theme = localStorage.getItem('theme');
     if (theme === 'light') {
         lightScheme();
     } else {
