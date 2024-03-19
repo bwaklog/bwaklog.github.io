@@ -141,6 +141,12 @@ b {
     */
 }
 
+/*on click of theme toggle, spin the image 5 times*/
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
+
 #theme-toggle {
     width: 24px;
     height: 24px;
@@ -152,6 +158,8 @@ b {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+
+    /*once clicked spin for 5 turns*/
 }
 
 

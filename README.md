@@ -40,3 +40,7 @@ site
     - `make fresh` : deltes the pre-existing `anna` dir and clones the lates repo 
     - `make serve` : builds the site and serves it to `localhost:8000` by default 
     - `make clean` : deletes the `anna` dir
+
+## Additional notes.
+
+If you want a more lazy way of hosting your site and not using github pages. You can try out [Netlify Drop](https://app.netlify.com/drop). For this you need a folder with all the contents of your site rendered out. Run `make host` and it will produce a fresh build of your contents with the latest ssg pulled. Drop the `rendered/` directory into the site and you are good to go. 

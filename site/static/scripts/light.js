@@ -28,6 +28,14 @@ function darkScheme() {
 function ThemeSwitch() {
     // on click of button with class toggle-theme, store theme in local and switch
     var theme = localStorage.getItem('theme');
+
+    // spin the toggle image 5 times
+    var toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', function() {
+        // invert the image
+        toggle.classList.toggle('invert');
+    });
+
     if (theme === 'light') {
         localStorage.setItem('theme', 'dark');
         darkScheme();
