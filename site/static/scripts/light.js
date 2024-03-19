@@ -14,7 +14,7 @@ function lightScheme() {
 function darkScheme() {
     document.documentElement.style.setProperty('--color-text', '#ffffff');
     document.documentElement.style.setProperty('--color-text-dim', '#ffffff7a');
-    document.documentElement.style.setProperty('--color-background', '#081f28');
+    document.documentElement.style.setProperty('--color-background', '#04131a');
     document.documentElement.style.setProperty('--color-postcard-text', '#b4befe5f');
     document.documentElement.style.setProperty('--color-white-accent', '#ffffff35');
     document.documentElement.style.setProperty('--catppuccino-crust', '#1e1e2d');

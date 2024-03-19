@@ -50,6 +50,18 @@ def Levi_ratio(a: str, b: str) -> int:
 
 This was womething that I found out hours before the final presentation. So I had to go ahead with using the prebuilt module, which im not so proud. The results were good but not fully upto my expectation.
 
+Here is a small demo of all of these things together. I appologise for the shitty quality of the gif. I yanked them from the presentation, and google slides doesn't like you downloading concents from a slide :P.
+
+
+#### Web Scrapping demo
+
+![web scrapping demo](/static/posts/webscrape.gif)
+
+#### Fuzzy finder demo
+
+![fuzzy finder demo](/static/posts/fuzzyfinder.gif)
+
+
 ## Problems encountered
 
 This project would have been a smooth sail if it werent for the big obstacle that I encountered where the data was simply insufficient. As a solution to this, I created a simple web scraper that works neatly along with the pre existing system that I made for the fuzzy finder. Instead of iteracting with the xkcd api, a neat google search querry along with some web scrappign gave some of the best output...I mean what else would I expect. Each xkcd url is in the following format.
@@ -98,16 +110,6 @@ def fetch_all_comics(nums_list):
 ```
 
 What was supposed to be a 2 hour job of sequentially handling all the tasks got reduced down to 5 minues (5 minutes and 23 seconds to be exact :P). This function is automaically called when any operation is called for using the CLI tool. Hence making data available for latest queries as well as for the fuzzy finder. 
-
-Here is a small demo of all of these things together. I appologise for the shitty quality of the gif. I yanked them from the presentation, and google slides doesn't like you downloading concents from a slide :P.
-
-### Web Scrapping demo
-
-![web scrapping demo](/static/posts/webscrape.gif)
-
-### Fuzzy finder demo
-
-![fuzzy finder demo](/static/posts/fuzzyfinder.gif)
 
 <br/>
 
