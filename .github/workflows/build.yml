@@ -35,7 +35,7 @@ jobs:
 
       - name: Clone the ssg application repo and copy content to be rendered
         run: |
-          git clone https://github.com/acmpesuecc/anna.git
+          git clone --progress --verbose --branch fix-drop-html-trail https://github.com/acmpesuecc/anna.git
           cd anna/
           rm -rf site/content/ site/static/style.css site/static/scripts site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
           cp -r ../site/{content,static,layout} ./site/

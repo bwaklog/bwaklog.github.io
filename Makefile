@@ -2,7 +2,7 @@ fresh:
 	@echo "\nCleaning up the project...\n"
 	@rm -rf anna
 	@echo "Cloning latest from acmpesuecc/anna...\n"
-	git clone --progress --verbose https://github.com/acmpesuecc/anna.git
+	git clone --progress --verbose --branch fix-drop-html-trail https://github.com/acmpesuecc/anna.git
 	@echo "Removing template files...\n"
 	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
@@ -12,7 +12,7 @@ fresh:
 
 host:
 	@echo "\nCloning latest from git and getting stuff ready..\n"
-	@make fresh	
+	@make fresh
 	@echo "\nBuilding site and getting rendered directory to an accessable point...\n"
 	@cd anna; go build; ./anna
 	@echo "\nMoving rendered site to /rendered\n"
