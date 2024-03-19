@@ -9,14 +9,6 @@ tags:
     - thoughts
 ---
 
-# Quality of work
-
-Aditya Hegde
-
-9th Mar 2024
-
-<br/>
-
 ## Parallax in approach
 
 A few thoughts off of my mind, my perspective on effort. It's something I'm a bit particular about. For me, there is a wall separating work achieved from hard work and work done for the sake of it. A wall that no one can pass through unless you change your approach or perspective of a situation. I'm a person who is particular about my job. I tend to put myself down and set unrealistic expectations at times. Now people would say, I'm crazy for it. But, it's that mindset for me that makes me want to do more.

@@ -6,7 +6,7 @@
         --color-primary-dim: #FF4A6A7f;
 		--color-text: #ffffff;
         --color-text-dim: #ffffff7f;
-		--color-background: #000000;
+		--color-background: #0e2a35;
         --color-postcard-text: #b4befe5f;
         --color-white-accent: #ffffff35;
         --catppuccino-crust: #1e1e2d;
@@ -289,7 +289,7 @@ h4 {font-size: 1.7rem;}
     & > ol > li,
     & > ul > li > a,
     & > ol > li > a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 /*
     & > ul > li,
@@ -297,6 +297,10 @@ h4 {font-size: 1.7rem;}
         margin-left: -2rem;
     } */
 
+}
+
+img:not(.theme-toggle) {
+    box-shadow: 0 0 16px #000000;
 }
 
 img {
@@ -367,6 +371,7 @@ details > img {
 
 .tag-placeholder {
     display: flex;
+    user-select: none;
 }
 
 .tag {
@@ -376,10 +381,17 @@ details > img {
     margin-bottom: 0.3rem;
     width: fit-content;
     padding: 0.3rem;
+    user-select: none;
 }
 .post-tag {
     font-weight: 500;
+    user-select: none;
+}
 
+.post-info {
+    border-bottom: 2px dotted var(--color-text-dim);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .posts {
@@ -493,14 +505,16 @@ h2 > code,
 h3 > code,
 h4 > code {
     font-family: Ioskeva, monospace;
-    /* background: var(--catppuccino-crust); */
-    color: var(--color-primary);
-    border: 1.5px solid var(--color-text-dim);
+    background: #11111a;
+    color: var(--color-text);
+    box-shadow: inset 0 0 4px #ffffff45;
     border-radius: 5px;
     word-wrap: break-word;
     font-size: inherit;
     box-decoration-break: clone;
-    padding: .1rem .3rem .2rem;
+    padding-inline: .4rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
     border-radius: .2rem;
 }
 
@@ -584,7 +598,7 @@ blockquote {
         & > ol > li,
         & > ul > li > a,
         & > ol > li > a {
-            font-size: .9rem;
+            font-size: 1.1rem;
         }
 
         & > h1 { font-size: 2.0rem;}

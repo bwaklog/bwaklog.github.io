@@ -13,14 +13,6 @@ tags:
     - tech
 ---
 
-# My first HSP talk
-
-Aditya Hegde
-
-12th Dec 2023
-
-<br/>
-
 I recently got the oppourtunity to take part in the project expo hosted by the club HSP part of PESU ECity campus. As part of this expo, I presented one of my on going projects [xkcd-grab](http://github.com/bwaklog/xkcd-grab) infront of an amazing crowd.
 
 So lets get to the actual part of the blog, what this presentation was all about
