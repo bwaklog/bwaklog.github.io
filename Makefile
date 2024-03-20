@@ -2,14 +2,14 @@ fresh:
 	@echo "\nCleaning up the project...\n"
 	@rm -rf anna
 	@echo "Cloning latest from acmpesuecc/anna...\n"
-	git clone --progress --verbose https://github.com/acmpesuecc/anna.git
+	git clone --progress https://github.com/acmpesuecc/anna.git
 	@echo "Removing template files...\n"
 	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
+	ls -a
 	@cp -r site/{content,static,layout} anna/site/
-	@echo "\nUse 'make serve' to build and serve site\n(Change flags in your make file if needed)"
-	@echo "\nNow use anna wisely you must.\nAnna is ready to go 🍚\n"
-	@echo "\nNow serve files from anna/site/rendered)"
+	@echo "\building anna"	
+	@cd anna; go build; ./anna
 	@
 
 host:
