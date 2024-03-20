@@ -2,7 +2,7 @@ fresh:
 	@echo "\nCleaning up the project...\n"
 	@rm -rf anna
 	@echo "Cloning latest from acmpesuecc/anna...\n"
-	git clone --progress --verbose --branch fix-drop-html-trail https://github.com/acmpesuecc/anna.git
+	git clone --progress --verbose https://github.com/acmpesuecc/anna.git
 	@echo "Removing template files...\n"
 	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
