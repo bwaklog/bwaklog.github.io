@@ -8,9 +8,7 @@ fresh:
 	@echo "Copying personal styles, content and layout into anna...\n"
 	@cp -r site/ anna/site/
 	@echo "\nBuilding anna"	
-	echo "\n"
-	ls anna
-	echo "\n"
+	ls anna/site
 	@cd anna; go build; ./anna
 	@
 
