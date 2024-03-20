@@ -9,6 +9,7 @@ fresh:
 	ls site/content
 	@cp -r site/ anna/site/
 	@echo "\nBuilding anna"	
+	ls anna/site/content
 	@cd anna; go build; ./anna
 	@
 
