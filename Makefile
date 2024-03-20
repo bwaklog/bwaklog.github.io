@@ -9,6 +9,8 @@ fresh:
 	@cp -r site/{content,static,layout} anna/site/
 	@echo "\nUse 'make serve' to build and serve site\n(Change flags in your make file if needed)"
 	@echo "\nNow use anna wisely you must.\nAnna is ready to go 🍚\n"
+	@echo "\nNow serve files from anna/site/rendered)"
+	@
 
 host:
 	@echo "\nCloning latest from git and getting stuff ready..\n"
