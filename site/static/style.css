@@ -6,7 +6,7 @@
     --color-primary-dim: #ff4a6a7f;
     --color-text: #ffffff;
     --color-text-dim: #ffffff7f;
-    --color-background: #0e2a35;
+    --color-background: #000000;
     --color-postcard-text: #b4befe5f;
     --color-white-accent: #ffffff35;
     --catppuccino-crust: #1e1e2d;
@@ -20,8 +20,6 @@
     --color-text: #000000;
     --color-text-dim: #000000;
     --color-background: #ffffff;
-    --color-primary: white;
-    --color-primary-dim: white;
     --color-postcard-text: #484848;
     --color-white-accent: #ffffff35;
     --catppuccino-crust: #dce0e8;
@@ -57,7 +55,7 @@ body {
   font-family: WorkSans, sans-serif;
   line-height: 1.6;
 
-  font-weight: 350;
+  font-weight: 400;
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -77,12 +75,12 @@ body {
 
 ::selection {
   color: var(--color-text);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dim);
 }
 
 ::-moz-selection {
   color: var(--color-text);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dim);
 }
 
 header {
@@ -469,6 +467,10 @@ details>img {
   &>p {
     font-size: 0.9rem;
   }
+}
+
+.post-card.description.date {
+  color: var(--color-primary);
 }
 
 .post-card.description {

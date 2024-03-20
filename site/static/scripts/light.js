@@ -1,8 +1,8 @@
 function lightScheme() {
   // change the tags
   document.documentElement.style.setProperty("--color-text", "#000000");
-  document.documentElement.style.setProperty("--color-text-dim", "#0000007a");
-  document.documentElement.style.setProperty("--color-background", "#FFFCF2");
+  document.documentElement.style.setProperty("--color-text-dim", "#000000aa");
+  document.documentElement.style.setProperty("--color-background", "#FFFFFF");
   document.documentElement.style.setProperty(
     "--color-postcard-text",
     "#484848",
@@ -19,8 +19,8 @@ function lightScheme() {
 
 function darkScheme() {
   document.documentElement.style.setProperty("--color-text", "#ffffff");
-  document.documentElement.style.setProperty("--color-text-dim", "#ffffff7a");
-  document.documentElement.style.setProperty("--color-background", "#020E13");
+  document.documentElement.style.setProperty("--color-text-dim", "#ffffffaa");
+  document.documentElement.style.setProperty("--color-background", "#000000");
   document.documentElement.style.setProperty(
     "--color-postcard-text",
     "#b4befe5f",
