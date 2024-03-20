@@ -6,10 +6,11 @@ fresh:
 	@echo "Removing template files...\n"
 	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
-	ls site/content
 	@cp -r site/ anna/site/
 	@echo "\nBuilding anna"	
-	ls anna/site/content
+	echo "\n"
+	ls anna
+	echo "\n"
 	@cd anna; go build; ./anna
 	@
 
