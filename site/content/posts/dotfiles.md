@@ -39,6 +39,4 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 <!-- add centered aligned small text about comic number -->
 <p align="center" style="transform: translateY(-1.5rem); opacity: 0.8;">xkcd 1168 - tar</p>
 
-<br/>
-
-*Aditya Hegde*
+<br />

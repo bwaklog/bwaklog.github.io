@@ -3,34 +3,34 @@
 
 <body>
 
-    {{template "header" .}}
+  {{template "header" .}}
 
-    <div class="body">
-        {{if eq .Frontmatter.Type "post"}}
-        <div class="post-info">
-            <h1 style="margin: 0; padding: 0;">{{.Frontmatter.Title}}</h1>
-            <p style="font-style: italic; padding: 0; margin: 0; font-weight: 300;">
-                Published on {{.Frontmatter.Date}} by {{$.Layout.Author}}
-            </p>
-            <div class="tags-paceholder">
-                {{range .Frontmatter.Tags}}
-                <div class="tag">
-                    <a class="post-tag" href="/tags/{{.}}">#{{.}}</a>
-                </div>
-                {{end}}
-            </div>
+  <div class="body">
+    {{if eq .Frontmatter.Type "post"}}
+    <div class="post-info">
+      <h1 style="margin: 0; padding: 0;">{{.Frontmatter.Title}}</h1>
+      <p style="font-style: italic; padding: 0; margin: 0; font-weight: 300;">
+        Published on {{.Frontmatter.Date}} by {{$.Layout.Author}}
+      </p>
+      <div class="tags-paceholder">
+        {{range .Frontmatter.Tags}}
+        <div class="tag">
+          <a class="post-tag" href="/tags/{{.}}/index.html">#{{.}}</a>
         </div>
-        {{else}}
         {{end}}
-        {{.Body}}
+      </div>
     </div>
+    {{else}}
+    {{end}}
+    {{.Body}}
+  </div>
 
-    <script>
-        hljs.highlightAll();
-        hljs.addPlugin(new CopyButtonPlugin());
-    </script>
+  <script>
+    hljs.highlightAll();
+    hljs.addPlugin(new CopyButtonPlugin());
+  </script>
 
-    {{template "footer" .}}
+  {{template "footer" .}}
 
 </body>
 

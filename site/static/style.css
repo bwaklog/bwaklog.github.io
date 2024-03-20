@@ -1,228 +1,232 @@
 /* Creating named values cuz im stupid */
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #ff4a6a;
-        --color-primary-dim: #ff4a6a7f;
-        --color-text: #ffffff;
-        --color-text-dim: #ffffff7f;
-        --color-background: #0e2a35;
-        --color-postcard-text: #b4befe5f;
-        --color-white-accent: #ffffff35;
-        --catppuccino-crust: #1e1e2d;
-    }
+  :root {
+    --color-primary: #ff4a6a;
+    --color-primary-dim: #ff4a6a7f;
+    --color-text: #ffffff;
+    --color-text-dim: #ffffff7f;
+    --color-background: #0e2a35;
+    --color-postcard-text: #b4befe5f;
+    --color-white-accent: #ffffff35;
+    --catppuccino-crust: #1e1e2d;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --color-primary: #ff4a6a;
-        --color-primary-dim: #ff4a6a7f;
-        --color-text: #000000;
-        --color-text-dim: #000000;
-        --color-background: #ffffff;
-        --color-primary: white;
-        --color-primary-dim: white;
-        --color-postcard-text: #484848;
-        --color-white-accent: #ffffff35;
-        --catppuccino-crust: #dce0e8;
-    }
+  :root {
+    --color-primary: #ff4a6a;
+    --color-primary-dim: #ff4a6a7f;
+    --color-text: #000000;
+    --color-text-dim: #000000;
+    --color-background: #ffffff;
+    --color-primary: white;
+    --color-primary-dim: white;
+    --color-postcard-text: #484848;
+    --color-white-accent: #ffffff35;
+    --catppuccino-crust: #dce0e8;
+  }
 }
 
 @font-face {
-    font-family: Ioskeva;
-    src: url(./fonts/mono/Ioskeva-Regular.ttf);
+  font-family: Ioskeva;
+  src: url(./fonts/mono/Ioskeva-Regular.ttf);
 }
 
 @font-face {
-    font-family: VictorMonoItalics;
-    src: url(./fonts/VictorMono/victormono_italics.ttf);
+  font-family: VictorMonoItalics;
+  src: url(./fonts/VictorMono/victormono_italics.ttf);
 }
 
 @font-face {
-    font-family: southam;
-    src: url(./fonts/sign/southam/Southam.otf);
+  font-family: southam;
+  src: url(./fonts/sign/southam/Southam.otf);
 }
 
 @font-face {
-    font-family: WorkSans;
-    src: url(./fonts/WorkSans.ttf);
+  font-family: WorkSans;
+  src: url(./fonts/WorkSans.ttf);
 }
 
 @font-face {
-    font-family: BebasNeue;
-    src: url(./fonts/BebasNeue.ttf);
+  font-family: BebasNeue;
+  src: url(./fonts/BebasNeue.ttf);
 }
 
 body {
-    font-family: WorkSans, sans-serif;
-    line-height: 1.6;
+  font-family: WorkSans, sans-serif;
+  line-height: 1.6;
 
-    font-weight: 350;
-    background-color: var(--color-background);
-    color: var(--color-text);
+  font-weight: 350;
+  background-color: var(--color-background);
+  color: var(--color-text);
 
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 100vh;
-    height: 95vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 100vh;
+  height: 95vh;
 
-    margin: auto;
-    margin-inline: 28%;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
+  margin: auto;
+  margin-inline: 28%;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
 
-    transition: margin 0.3s ease-in-out;
+  transition: margin 0.3s ease-in-out;
 }
 
 ::selection {
-    color: var(--color-text);
-    background-color: var(--color-primary);
+  color: var(--color-text);
+  background-color: var(--color-primary);
 }
 
 ::-moz-selection {
-    color: var(--color-text);
-    background-color: var(--color-primary);
+  color: var(--color-text);
+  background-color: var(--color-primary);
 }
 
 header {
-    flex: 0;
+  flex: 0;
 }
 
 footer {
-    width: 100%;
-    flex: 0;
+  width: 100%;
+  flex: 0;
 
-    font-size: 0.9rem;
-    font-weight: 300;
-    align-self: center;
-    padding: 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  align-self: center;
+  padding: 1rem 0;
 
-    text-align: center;
+  text-align: center;
 
-    border-top: 1px solid var(--color-text-dim);
-    background-color: var(--color-background);
-    /* color: var(--color-postcard-text); */
-    color: var(--color-text-dim);
+  border-top: 1px solid var(--color-text-dim);
+  background-color: var(--color-background);
+  /* color: var(--color-postcard-text); */
+  color: var(--color-text-dim);
 
-    & > span {
-        color: var(--color-primary-dim);
-    }
+  &>span {
+    color: var(--color-primary-dim);
+  }
 }
 
 /* all italics fonts to victormonoitalics */
 i,
 em {
-    font-family: southam;
-    font-size: 3.2rem;
+  font-family: southam;
+  font-size: 2.5rem;
 }
+
 b {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .navigations {
-    font-size: 1.1rem;
-    font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 500;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
-    & > a {
-        word-wrap: break-word;
-    }
-    /*
+  &>a {
+    word-wrap: break-word;
+  }
+
+  /*
     border-bottom: 2px dotted var(--color-primary-dim);
     */
 }
 
 /*on click of theme toggle, spin the image 5 times*/
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 #theme-toggle {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    margin: 0;
-    /* this is an id to a svg with path. Change the colour */
-    fill: var(--color-text);
-    /*disable text selection*/
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin: 0;
+  /* this is an id to a svg with path. Change the colour */
+  fill: var(--color-text);
+  /*disable text selection*/
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 
-    /*once clicked spin for 5 turns*/
+  /*once clicked spin for 5 turns*/
 }
 
 .theme-toggle-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  margin-left: 1rem;
 }
 
 .footer-image {
-    width: 15px;
-    height: 15px;
-    margin: 0;
-    user-select: none;
-    display: inline;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    transform: rotate(20deg);
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  user-select: none;
+  display: inline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  transform: rotate(20deg);
 }
 
 .theme-toggle {
-    border: none;
-    background-color: transparent;
-    color: white;
+  border: none;
+  background-color: transparent;
+  color: white;
 }
 
 nav {
-    margin: auto;
-    padding: 1rem;
+  margin: auto;
+  padding: 1rem;
 
-    background-color: var(--color-background);
+  background-color: var(--color-background);
 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 
-    border-bottom: 1px solid var(--color-text-dim);
+  border-bottom: 1px solid var(--color-text-dim);
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
-    position: relative;
+  color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
 }
 
 a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-primary);
-    transform: scaleX(0);
-    transition: transform 0.2s ease;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
 }
 
 a:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
+
 a:active::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Thank you, @kepano!
@@ -242,61 +246,65 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: BebasNeue;
-    margin: 0;
-    padding: 0;
-    margin-top: 0.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    /*text spacing*/
-    text-align: left;
-    word-break: break-word;
+  font-family: BebasNeue;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  /*text spacing*/
+  text-align: left;
+  word-break: break-word;
 }
 
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
+
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
+
 h3 {
-    font-size: 1.9rem;
+  font-size: 1.9rem;
 }
+
 h4 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .body {
-    /* padding: 1rem; */
-    background-color: var(--color-background);
+  /* padding: 1rem; */
+  background-color: var(--color-background);
 
-    flex: 1 0 auto;
-    margin-top: 0.5rem;
-    margin-top: 0.5rem;
+  flex: 1 0 auto;
+  margin-top: 0.5rem;
+  margin-top: 0.5rem;
 
-    & > a,
-    & > ul > li > a,
-    & > ol > li > a,
-    & > ul > li > p > a,
-    & > ol > li > p > a,
-    & > p > a {
-        color: var(--color-primary);
-    }
+  &>a,
+  &>ul>li>a,
+  &>ol>li>a,
+  &>ul>li>p>a,
+  &>ol>li>p>a,
+  &>p>a {
+    color: var(--color-primary);
+  }
 
-    & > p {
-        margin: 0;
-        padding: 0;
-    }
+  &>p {
+    margin: 0;
+    padding: 0;
+  }
 
-    & > p,
-    & > a,
-    & > ul > li,
-    & > ol > li,
-    & > ul > li > a,
-    & > ol > li > a {
-        font-size: 1.1rem;
-    }
-    /*
+  &>p,
+  &>a,
+  &>ul>li,
+  &>ol>li,
+  &>ul>li>a,
+  &>ol>li>a {
+    font-size: .95rem;
+  }
+
+  /*
     & > ul > li,
     & > ol > li {
         margin-left: -2rem;
@@ -304,332 +312,345 @@ h4 {
 }
 
 img:not(.theme-toggle) {
-    box-shadow: 0 0 0px #000000;
+  box-shadow: 0 0 0px #000000;
 }
 
 img {
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center center;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center center;
 
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
-    transition: 150ms;
+  transition: 150ms;
 
-    &:hover {
-        /* transform: scale(1.02); */
-        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0%);
-    }
-    &:active {
-        /* transform: scale(1.02); */
-        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0%);
-    }
+  &:hover {
+    /* transform: scale(1.02); */
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+
+  &:active {
+    /* transform: scale(1.02); */
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
 }
 
 iframe {
-    width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-details > summary {
-    font-size: 1.5rem;
-    font-family: BebasNeue;
+details>summary {
+  font-size: 1.5rem;
+  font-family: BebasNeue;
 }
 
 summary::marker {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
-details > img {
-    width: 70%;
+details>img {
+  width: 70%;
 }
 
 .all-tags,
 .tagged-posts {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 
-    & > a {
-        font-size: 1.1rem;
-        padding: 0.5rem;
-        margin: 0.3rem;
-    }
+  &>a {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+  }
 }
 
 .tag-placeholder {
-    display: flex;
-    user-select: none;
+  display: flex;
+  user-select: none;
 }
 
 .tag {
-    display: inline-block;
-    border-radius: 2px;
-    margin-right: 0.3rem;
-    margin-bottom: 0.3rem;
-    width: fit-content;
-    padding: 0.3rem;
-    user-select: none;
+  display: inline-block;
+  border-radius: 2px;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: fit-content;
+  padding: 0.3rem;
+  user-select: none;
 }
+
 .post-tag {
-    font-weight: 500;
-    user-select: none;
+  font-weight: 500;
+  user-select: none;
 }
 
 .post-info {
-    border-bottom: 2px dotted var(--color-text-dim);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  border-bottom: 2px dotted var(--color-text-dim);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .posts {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: auto;
 
-    & > a {
-        border-radius: 5px;
-        margin: 0.5rem;
-        word-wrap: break-word;
-        text-decoration: none;
+  &>a {
+    border-radius: 5px;
+    margin: 0.5rem;
+    word-wrap: break-word;
+    text-decoration: none;
 
-        transition:
-            background-color 150ms ease-in-out,
-            box-shadow 150ms ease-in-out;
-    }
+    transition:
+      background-color 150ms ease-in-out,
+      box-shadow 150ms ease-in-out;
+  }
 
-    & > a:hover {
-        /*box-shadow: inset 0 0 20px var(--color-text);*/
-        background-color: var(--color-background);
-    }
+  &>a:hover {
+    /*box-shadow: inset 0 0 20px var(--color-text);*/
+    background-color: var(--color-background);
+  }
 }
 
 .post-card {
-    color: var(--color-text-dim);
+  color: var(--color-text-dim);
 }
 
 .post-card-div {
-    display: grid;
+  display: grid;
 
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 
-    & > * {
-        padding-inline: 1rem;
-        /* color: var(--color-postcard-text); */
-        color: var(--color-text-dim);
-    }
+  &>* {
+    padding-inline: 1rem;
+    /* color: var(--color-postcard-text); */
+    color: var(--color-text-dim);
+  }
 
-    & > p {
-        margin: 0;
-        padding: 0;
-        padding-inline: 1rem;
-        font-size: 0.9rem;
-        font-weight: 300;
-    }
+  &>p {
+    margin: 0;
+    padding: 0;
+    padding-inline: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
 }
 
 .post-card.description {
-    & > h3 {
-        font-size: 1.7rem;
-        margin: 0;
-        color: var(--color-text);
-        /* color: var(--color-text-dim); */
-    }
-    & > p {
-        font-size: 0.9rem;
-    }
+  &>h3 {
+    font-size: 1.7rem;
+    margin: 0;
+    color: var(--color-text);
+    /* color: var(--color-text-dim); */
+  }
+
+  &>p {
+    font-size: 0.9rem;
+  }
 }
 
 .post-card.description {
-    & > p {
-        font-weight: 300;
-        padding: 0;
-        margin: 0;
-    }
+  &>p {
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.body > img {
-    /* center the image wrt the screen*/
+.body>img {
+  /* center the image wrt the screen*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+}
+
+pre code {
+  font-family: Ioskeva, monospace;
+  background: white;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  border-radius: 0.5rem;
+}
+
+pre code.hljs {
+  /* background-color: #151525!important; */
+  /* line-height: 1.4rem; */
+  /*use ligatures*/
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga" on;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+p>code,
+li>code,
+dd>code,
+td>code h1>code,
+h2>code,
+h3>code,
+h4>code {
+  font-family: Ioskeva, monospace;
+  border: 1px dotted var(--color-text);
+  color: var(--color-primary);
+  box-shadow: inset 0 0 4px #ffffff45;
+  border-radius: 5px;
+  word-wrap: break-word;
+  font-size: inherit;
+  box-decoration-break: clone;
+  padding-inline: 0.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &>p {
+    font-family: VictorMonoItalics;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  border-left: 3px solid var(--color-primary);
+  margin-left: 0px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    margin-inline: 20%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
-
-pre code {
-    font-family: Ioskeva, monospace;
-    background: white;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    border-radius: 0.5rem;
-}
-
-pre code.hljs {
-    /* background-color: #151525!important; */
-    /* line-height: 1.4rem; */
-    /*use ligatures*/
-    font-variant-ligatures: common-ligatures;
-    font-feature-settings: "liga" on;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-p > code,
-li > code,
-dd > code,
-td > code h1 > code,
-h2 > code,
-h3 > code,
-h4 > code {
-    font-family: Ioskeva, monospace;
-    border: 1px dotted var(--color-text);
-    color: var(--color-primary);
-    box-shadow: inset 0 0 4px #ffffff45;
-    border-radius: 5px;
-    word-wrap: break-word;
-    font-size: inherit;
-    box-decoration-break: clone;
-    padding-inline: 0.4rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    border-radius: 0.2rem;
-}
-
-blockquote {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    & > p {
-        font-family: VictorMonoItalics;
-        font-size: 1.2rem;
-        margin-left: 1rem;
-    }
-
-    border-left: 3px solid var(--color-primary);
-    margin-left: 0px;
-}
-
-@media (max-width: 1200px) {
-    body {
-        margin-inline: 20%;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  }
 }
 
 @media (max-width: 900px) {
-    body {
-        margin-inline: 20%;
-    }
+  body {
+    margin-inline: 20%;
+  }
 
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* styling for viewports width < 600px */
 @media (max-width: 650px) {
-    .navigations {
-        font-size: 1rem;
-    }
+  .navigations {
+    font-size: 1rem;
+  }
 
-    body {
-        margin-inline: 8%;
-    }
+  body {
+    margin-inline: 8%;
+  }
 
-    footer {
-        font-size: 0.8rem;
-    }
+  footer {
+    font-size: 0.8rem;
+  }
 
-    img {
-        /* height: 35rem;
+  img {
+    /* height: 35rem;
     width: auto; */
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .body {
+
+    &>a,
+    &>p,
+    &>ul>li,
+    &>ol>li,
+    &>ul>li>a,
+    &>ol>li>a {
+      font-size: .95rem;
     }
 
-    .body {
-        & > a,
-        & > p,
-        & > ul > li,
-        & > ol > li,
-        & > ul > li > a,
-        & > ol > li > a {
-            font-size: 1.1rem;
-        }
-
-        & > h1 {
-            font-size: 2rem;
-        }
-        & > h2 {
-            font-size: 1.7rem;
-        }
-        & > h3 {
-            font-size: 1.5rem;
-        }
-        & > h4 {
-            font-size: 1.1rem;
-        }
+    &>h1 {
+      font-size: 2rem;
     }
 
-    .post-card,
-    .post-card.description {
-        & > p,
-        & > .post-card-div > p {
-            font-size: 0.9rem;
-        }
-
-        & > h3 {
-            font-size: 1.5rem;
-        }
+    &>h2 {
+      font-size: 1.7rem;
     }
 
-    pre code.hljs {
-        width: 95%;
+    &>h3 {
+      font-size: 1.5rem;
     }
 
-    img {
-        width: 100%;
-        height: auto;
+    &>h4 {
+      font-size: 1.1rem;
     }
+  }
+
+  .post-card,
+  .post-card.description {
+
+    &>p,
+    &>.post-card-div>p {
+      font-size: 0.9rem;
+    }
+
+    &>h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  pre code.hljs {
+    width: 95%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

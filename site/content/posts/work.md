@@ -26,5 +26,3 @@ Every second part of your effort on something counts, it makes a difference. For
 Being true to your work is one more thing that is very important. Set your margins high, as not everyone has the same perspective. Don't ever make assumptions about whether the other party is on the same wavelength as you are. Things break down real quick the moment that happens. You never expect it and then it hits you, had in the back. All that effort, gone down the drain, and now you're at square one.
 
 <br/>
-
-*Aditya Hegde*

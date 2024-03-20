@@ -25,6 +25,3 @@ I love learning new stuff. And at the same time, I don't know what to focus on. 
 
 <br />
 
-Regards
-
-*Aditya Hegde*
