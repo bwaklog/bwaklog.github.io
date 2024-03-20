@@ -8,7 +8,7 @@
 
     <div class="posts">
       {{range $PostDate, $Post := .Posts}}
-      <a class="post-card" href="posts/{{$Post.Filename}}">
+      <a class="post-card" href="posts/{{$Post.Filename}}.html">
         <div class="post-card-div">
           <div class="post-card description">
             <h3>{{$Post.Frontmatter.Title}}</h3>
