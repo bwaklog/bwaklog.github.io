@@ -7,8 +7,8 @@ fresh:
 	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
 	ls -a
-	@cp -r site/{content,static,layout} anna/site/
-	@echo "\building anna"	
+	@cp -r site/ anna/site/
+	@echo "\nBuilding anna"	
 	@cd anna; go build; ./anna
 	@
 
