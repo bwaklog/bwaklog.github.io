@@ -4,7 +4,7 @@ fresh:
 	@echo "Cloning latest from acmpesuecc/anna...\n"
 	git clone --progress https://github.com/acmpesuecc/anna.git
 	@echo "Removing template files...\n"
-	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
+	@rm -rf anna/site
 	@echo "Copying personal styles, content and layout into anna...\n"
 	@cp -r site/ anna/site/
 	@echo "\nBuilding anna"	
