@@ -4,7 +4,7 @@ fresh:
 	@echo "Cloning latest from acmpesuecc/anna...\n"
 	git clone --progress --verbose --branch fix-drop-html-trail https://github.com/acmpesuecc/anna.git
 	@echo "Removing template files...\n"
-	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
+	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
 	@cp -r site/{content,static,layout} anna/site/
 	@echo "\nUse 'make serve' to build and serve site\n(Change flags in your make file if needed)"
@@ -36,7 +36,7 @@ update:
 
 personal:
 	@echo "\nRemoving template files...\n"
-	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, partials/}
+	@rm -rf anna/site/content/ anna/site/static/ anna/site/layout/{config.yml, tag-subpage.html, tags.html, page.html, posts.html, partials/}
 	@echo "Copying personal styles, content and layout into anna...\n"
 	@cp -r site/{content,static,layout} anna/site/
 
