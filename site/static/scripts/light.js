@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
   window.onload = function () {
     const toggle = document.getElementById("theme-toggle");
     toggle.onclick = function () {
-      toggle.style.transition = "transform 1s cubic-bezier(1,0,0,1)";
-      if (toggle.style.transform === "rotate(3600deg)") {
+      toggle.style.transition = "transform 300ms cubic-bezier(1,0,0,1)";
+      if (toggle.style.transform === "rotate(720deg)") {
         toggle.style.transform = "rotate(0deg)";
       } else {
-        toggle.style.transform = "rotate(3600deg)";
+        toggle.style.transform = "rotate(720deg)";
       }
       ThemeSwitch();
     };

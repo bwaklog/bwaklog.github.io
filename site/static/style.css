@@ -138,17 +138,6 @@ b {
     */
 }
 
-/*on click of theme toggle, spin the image 5 times*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(180deg);
-  }
-}
-
 #theme-toggle {
   width: 24px;
   height: 24px;
@@ -311,7 +300,16 @@ h4 {
     } */
 }
 
-img:not(.theme-toggle) {
+.profile-image {
+  width: 50px;
+  height: 50px;
+  /*dont change image dimensions*/
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+img:not(.theme-toggle):not(.profile-image) {
   box-shadow: 0 0 0px #000000;
 }
 
