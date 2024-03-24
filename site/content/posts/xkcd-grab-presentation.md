@@ -13,21 +13,9 @@ tags:
     - tech
 ---
 
-I recently got the oppourtunity to take part in the project expo hosted by the club HSP part of PESU ECity campus. As part of this expo, I presented one of my on going projects [xkcd-grab](http://github.com/bwaklog/xkcd-grab) infront of an amazing crowd.
+I recently got the oppourtunity to take part in the project expo hosted by the club HSP part of PESU ECity campus. As part of this expo, I presented one of my on going projects [xkcd-grab](http://github.com/bwaklog/xkcd-grab) infront of an amazing crowd. So lets get to the actual part of the blog, what this presentation was all about. This relatively small project is somewhat of a playground for me to explore different searching algorithms and querying techniques. While this might have a niche target, I want to build this tool into a more robust API client. The roadmap of this current is to make a smart cli tool to find the most relevant comic based on a search query. The CLI itself is a minimal working tool I wrote with python. Besides using the api, i've created several extra features that completely changed original idea of the app. This project begun in 2021, during my college entrance preparations. It started off as a basic API tool that worked with the xkcd api to fetch a comic based on a derised number. Looked cool at the time but was still pretty clunky. Why would you want to search something based on a number. Thats horrible. Well, the cli tool couldn't do that initially. This is when decided to implement some cool way you can interact with the cli, and find the comic right from your terminal.
 
-So lets get to the actual part of the blog, what this presentation was all about
-
-![why did i make this slide](https://i.imgur.com/j4xVBvR.jpg)
-
-This relatively small project is somewhat of a playground for me to explore different searching algorithms and querying techniques. While this might have a niche target, I want to build this tool into a more robust API client. The roadmap of this current is to make a smart cli tool to find the most relevant comic based on a search query.
-
-The CLI itself is a minimal working tool I wrote with python. Besides using the api, i've created several extra features that completely changed original idea of the app. This project begun in 2021, during my college entrance preparations. It started off as a basic API tool that worked with the xkcd api to fetch a comic based on a derised number. Looked cool at the time but was still pretty clunky. Why would you want to search something based on a number. Thats horrible
-
-![whatsapp chats](https://i.imgur.com/Gzhcsps.jpg)
-
-Well, the cli tool couldn't do that initially. This is when decided to implement some cool way you can interact with the cli, and find the comic right from your terminal.
-
-<br/>
+<br />
 
 ## Fuzzy finding with levenshtine distance
 
@@ -51,15 +39,6 @@ def Levi_ratio(a: str, b: str) -> int:
 This was womething that I found out hours before the final presentation. So I had to go ahead with using the prebuilt module, which im not so proud. The results were good but not fully upto my expectation.
 
 Here is a small demo of all of these things together. I appologise for the shitty quality of the gif. I yanked them from the presentation, and google slides doesn't like you downloading concents from a slide :P.
-
-
-#### Web Scrapping demo
-
-![web scrapping demo](/static/posts/webscrape.gif)
-
-#### Fuzzy finder demo
-
-![fuzzy finder demo](/static/posts/fuzzyfinder.gif)
 
 
 ## Problems encountered

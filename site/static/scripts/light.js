@@ -1,7 +1,7 @@
 function lightScheme() {
   // change the tags
   document.documentElement.style.setProperty("--color-text", "#000000");
-  document.documentElement.style.setProperty("--color-text-dim", "#000000aa");
+  document.documentElement.style.setProperty("--color-text-dim", "#0000007a");
   document.documentElement.style.setProperty("--color-background", "#FFFFFF");
   document.documentElement.style.setProperty(
     "--color-postcard-text",
@@ -19,7 +19,7 @@ function lightScheme() {
 
 function darkScheme() {
   document.documentElement.style.setProperty("--color-text", "#ffffff");
-  document.documentElement.style.setProperty("--color-text-dim", "#ffffffaa");
+  document.documentElement.style.setProperty("--color-text-dim", "#ffffff7a");
   document.documentElement.style.setProperty("--color-background", "#000000");
   document.documentElement.style.setProperty(
     "--color-postcard-text",
@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
   window.onload = function () {
     const toggle = document.getElementById("theme-toggle");
     toggle.onclick = function () {
-      toggle.style.transition = "transform 300ms cubic-bezier(1,0,0,1)";
-      if (toggle.style.transform === "rotate(720deg)") {
+      toggle.style.transition = "transform 1s cubic-bezier(1,0,0,1)";
+      if (toggle.style.transform === "rotate(3600deg)") {
         toggle.style.transform = "rotate(0deg)";
       } else {
-        toggle.style.transform = "rotate(720deg)";
+        toggle.style.transform = "rotate(3600deg)";
       }
       ThemeSwitch();
     };
