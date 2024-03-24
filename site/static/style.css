@@ -55,7 +55,7 @@ body {
   font-family: WorkSans, sans-serif;
   line-height: 1.6;
 
-  font-weight: 400;
+  font-weight: 350;
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -111,7 +111,6 @@ footer {
 }
 
 /* all italics fonts to victormonoitalics */
-i,
 em {
   font-family: southam;
   font-size: 2.5rem;

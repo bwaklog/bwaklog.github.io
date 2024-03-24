@@ -1,7 +1,7 @@
 ---
 date: 2024-08-09
 title: Quality of work  
-draft: true
+draft: false
 type: post
 description: Thoughts off of my mind.
 tags:
