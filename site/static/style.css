@@ -60,7 +60,7 @@ body {
   font-family: Newsreader, WorkSans, sans-serif;
   line-height: 1.5;
 
-  font-weight: 350;
+  font-weight: 300;
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -220,7 +220,7 @@ a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not(.r
 h1,
 h2,
 h3,
-/ h4,
+h4,
 h5,
 h6 {
   font-family: WorkSans;
@@ -604,7 +604,7 @@ blockquote {
     &>ol>li,
     &>ul>li>a,
     &>ol>li>a {
-      font-size: .95rem;
+      font-size: 1.25rem;
     }
 
     &>h1 {
