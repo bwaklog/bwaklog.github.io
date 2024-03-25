@@ -37,6 +37,6 @@ defaults write -g NSWindowShouldDragOnGesture -bool true
 
 ![xkcd 1168 tar](https://imgs.xkcd.com/comics/tar_2x.png)
 <!-- add centered aligned small text about comic number -->
-<p align="center" style="transform: translateY(-1.5rem); opacity: 0.8;">xkcd 1168 - tar</p>
+<p align="center" style="font-size: 1.1rem; transform: translateY(-1.5rem); opacity: 0.8;">xkcd 1168 - tar</p>
 
 <br />

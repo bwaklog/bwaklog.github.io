@@ -58,7 +58,7 @@
 
 body {
   font-family: Newsreader, WorkSans, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 
   font-weight: 350;
   background-color: var(--color-background);
@@ -198,6 +198,7 @@ a {
   margin-right: 1rem;
 
   &>a {
+    font-size: 1.2rem;
     font-weight: 450;
     word-wrap: break-word;
     color: var(--color-text);
@@ -219,7 +220,7 @@ a:not(.plain):not(.tag):not(.post-tag):not(.internal-link):not(.footnote):not(.r
 h1,
 h2,
 h3,
-h4,
+/ h4,
 h5,
 h6 {
   font-family: WorkSans;
@@ -278,7 +279,7 @@ h4 {
   &>ol>li,
   &>ul>li>a,
   &>ol>li>a {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   /*
