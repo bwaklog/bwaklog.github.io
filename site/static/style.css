@@ -51,8 +51,13 @@
   src: url(./fonts/BebasNeue.ttf);
 }
 
+@font-face {
+  font-family: Newsreader;
+  src: url(./fonts/Newsreader.ttf);
+}
+
 body {
-  font-family: WorkSans, sans-serif;
+  font-family: Newsreader, WorkSans, sans-serif;
   line-height: 1.6;
 
   font-weight: 350;
@@ -396,6 +401,7 @@ details>img {
   flex-direction: column;
   /* align-items: center; */
   margin: auto;
+  font-family: WorkSans;
 
   &>a {
     border-radius: 5px;
