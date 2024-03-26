@@ -57,10 +57,10 @@
 }
 
 body {
-  font-family: Newsreader, WorkSans, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, WorkSans, sans-serif;
   line-height: 1.5;
 
-  font-weight: 300;
+  font-weight: 350;
   background-color: var(--color-background);
   color: var(--color-text);
 
@@ -223,7 +223,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Newsreader, WorkSans;
+  font-family: WorkSans;
   margin: 0;
   padding: 0;
   margin-top: 0.5rem;
@@ -280,7 +280,7 @@ h4 {
   &>ol>li,
   &>ul>li>a,
   &>ol>li>a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   /*
@@ -411,9 +411,6 @@ details>img {
     word-wrap: break-word;
     text-decoration: none;
 
-    box-shadow: 0 0 5px var(--color-text-dim);
-    border: 2px dotted var(--color-text-dim);
-
     transition:
       background-color 150ms ease-in-out,
       box-shadow 150ms ease-in-out;
@@ -515,16 +512,16 @@ h2>code,
 h3>code,
 h4>code {
   font-family: Ioskeva, monospace;
-  border: 1px dotted var(--color-text);
   color: var(--color-primary);
+  background-color: var(--catppuccino-crust);
   box-shadow: inset 0 0 4px #ffffff45;
   border-radius: 5px;
   word-wrap: break-word;
-  font-size: inherit;
+  font-size: 1rem;
   box-decoration-break: clone;
   padding-inline: 0.4rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   border-radius: 0.2rem;
 }
 
