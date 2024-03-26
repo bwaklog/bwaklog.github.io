@@ -223,7 +223,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: WorkSans;
+  font-family: Newsreader, WorkSans;
   margin: 0;
   padding: 0;
   margin-top: 0.5rem;
@@ -240,11 +240,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.9rem;
+  font-weight: 550;
 }
 
 h4 {
@@ -402,13 +403,16 @@ details>img {
   flex-direction: column;
   /* align-items: center; */
   margin: auto;
-  font-family: WorkSans;
+  /*font-family: WorkSans;*/
 
   &>a {
     border-radius: 5px;
     margin: 0.5rem;
     word-wrap: break-word;
     text-decoration: none;
+
+    box-shadow: 0 0 5px var(--color-text-dim);
+    border: 2px dotted var(--color-text-dim);
 
     transition:
       background-color 150ms ease-in-out,
