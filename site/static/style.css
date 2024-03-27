@@ -6,7 +6,7 @@
     --color-primary-dim: #ff4a6a7f;
     --color-text: #ffffff;
     --color-text-dim: #ffffff7f;
-    --color-background: #000000;
+    --color-background: #161618;
     --color-postcard-text: #b4befe5f;
     --color-white-accent: #ffffff35;
     --catppuccino-crust: #1e1e2d;
@@ -98,12 +98,17 @@ footer {
   width: 100%;
   flex: 0;
 
+  display: flex;
+  /*grid-template-columns: 1fr 100px;
+   */
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   font-size: 0.9rem;
   font-weight: 300;
   align-self: center;
   padding: 1rem 0;
-
-  text-align: center;
 
   border-top: 1px solid var(--color-text-dim);
   /* background-color: var(--color-background);*/
@@ -190,6 +195,7 @@ a {
 
 .navigations {
   font-size: 1rem;
+  font-family: Newsreader, sans-serif;
 
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +229,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: WorkSans;
+  font-family: Newsreader, sans-serif;
   margin: 0;
   padding: 0;
   margin-top: 0.5rem;
@@ -523,6 +529,7 @@ h4>code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   border-radius: 0.2rem;
+  transition: background 150ms ease-in-out;
 }
 
 blockquote {
@@ -530,7 +537,8 @@ blockquote {
   margin-bottom: 2rem;
 
   &>p {
-    font-family: VictorMonoItalics;
+    /*font-family: VictorMonoItalics;*/
+    font-variant-caps: unicase;
     font-size: 1.2rem;
     margin-left: 1rem;
   }
@@ -599,13 +607,15 @@ blockquote {
 
   .body {
 
+    text-align: justify;
+
     &>a,
     &>p,
     &>ul>li,
     &>ol>li,
     &>ul>li>a,
     &>ol>li>a {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
 
     &>h1 {

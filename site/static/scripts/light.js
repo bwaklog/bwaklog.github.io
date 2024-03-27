@@ -20,7 +20,7 @@ function lightScheme() {
 function darkScheme() {
   document.documentElement.style.setProperty("--color-text", "#ffffff");
   document.documentElement.style.setProperty("--color-text-dim", "#ffffff7a");
-  document.documentElement.style.setProperty("--color-background", "#000000");
+  document.documentElement.style.setProperty("--color-background", "#161618");
   document.documentElement.style.setProperty(
     "--color-postcard-text",
     "#b4befe5f",
